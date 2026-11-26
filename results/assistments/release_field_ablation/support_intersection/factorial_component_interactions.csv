@@ -1,0 +1,4 @@
+model,NC00,NC10,NC01,NC11,hint_only,attempt_only,hint_after_attempt,attempt_after_hint,joint,interaction_nc,interaction_unsupported,interaction_set_valued,interaction_nc_equals_sum_of_components,matches_ablation
+TransparentActionPFA,22974,36163,56296,77892,13189,33322,21596,41729,54918,8407,8252,155,True,True
+ActionTokenGRU,129243,99349,87470,93047,-29894,-41773,5577,-6302,-36196,35471,8252,27219,True,True
+CausalTokenAttentionKT,176477,136891,138271,131770,-39586,-38206,-6501,-5121,-44707,33085,8252,24833,True,True

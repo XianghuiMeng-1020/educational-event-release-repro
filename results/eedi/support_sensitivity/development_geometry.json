@@ -1,0 +1,29 @@
+{
+  "n_development_keys": 1877,
+  "keys_original_support": 932,
+  "keys_by_n_options": {
+    "1": 945,
+    "2": 25,
+    "3": 904,
+    "4": 3
+  },
+  "keys_by_user_band": {
+    "20+": 1727,
+    "10-19": 65,
+    "2-4": 42,
+    "5-9": 28,
+    "lt2": 15
+  },
+  "events_by_n_options": {
+    "1": 429314,
+    "2": 1136,
+    "3": 367355,
+    "4": 1785
+  },
+  "questions_answer_key": {
+    "unique": 944,
+    "conflicting": 4,
+    "unavailable": 0
+  },
+  "development_questions_with_a_correct_response": 933
+}

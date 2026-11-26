@@ -1,0 +1,29 @@
+{
+  "status": "fit",
+  "path": "akt_nonrasch_seed17.pt",
+  "sha256": "697ce47feae2cf8ffca5ca28004cf9bf01fe151c4c2c98f29438c88f9359a4ab",
+  "history": [
+    {
+      "epoch": 1,
+      "train_bce": 0.5887614253056314,
+      "calibration_log_loss": 0.570505589235299
+    },
+    {
+      "epoch": 2,
+      "train_bce": 0.5817518590644742,
+      "calibration_log_loss": 0.5619619029771292
+    },
+    {
+      "epoch": 3,
+      "train_bce": 0.5776044529494109,
+      "calibration_log_loss": 0.57168782222453
+    }
+  ],
+  "best_calibration_log_loss": 0.5619619029771292,
+  "reload_max_abs": 0.0,
+  "parameters": 4210713,
+  "probe_lengths": [
+    40,
+    40
+  ]
+}

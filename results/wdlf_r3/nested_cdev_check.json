@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-08-08T11:13:38.506617+00:00",
+  "definition": "Empirical nesting: for shared development libraries, rich-signature sets satisfy C_dev,fine(z_f)subseteq C_dev,coarse(z_c) on confirmatory events where both keys are supported; plus key-level projection check via syn_from_sig.",
+  "eventwise_both_supported": {
+    "S0->S1": 861968,
+    "S1->S2": 859051,
+    "S2->S3": 839132
+  },
+  "eventwise_subset_violations": {
+    "S0->S1": 0,
+    "S1->S2": 0,
+    "S2->S3": 0
+  },
+  "eventwise_zero_violations": true,
+  "key_level_checked": {
+    "S0->S1": 4053654,
+    "S1->S2": 4042250,
+    "S2->S3": 3957114
+  },
+  "key_level_violations": {
+    "S0->S1": 0,
+    "S1->S2": 0,
+    "S2->S3": 0
+  },
+  "key_level_zero_violations": true
+}

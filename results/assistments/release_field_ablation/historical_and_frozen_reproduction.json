@@ -1,0 +1,107 @@
+{
+  "pass": true,
+  "cells": [
+    {
+      "model": "TransparentActionPFA",
+      "release": "R00",
+      "expected": [
+        20408,
+        916845,
+        2566,
+        45
+      ],
+      "observed": [
+        20408,
+        916845,
+        2566,
+        45
+      ],
+      "match": true
+    },
+    {
+      "model": "TransparentActionPFA",
+      "release": "R11",
+      "expected": [
+        77877,
+        861927,
+        15,
+        0
+      ],
+      "observed": [
+        77877,
+        861927,
+        15,
+        0
+      ],
+      "match": true
+    },
+    {
+      "model": "ActionTokenGRU",
+      "release": "R00",
+      "expected": [
+        20408,
+        810576,
+        108835,
+        1077
+      ],
+      "observed": [
+        20408,
+        810576,
+        108835,
+        1077
+      ],
+      "match": true
+    },
+    {
+      "model": "ActionTokenGRU",
+      "release": "R11",
+      "expected": [
+        77877,
+        846772,
+        15170,
+        252
+      ],
+      "observed": [
+        77877,
+        846772,
+        15170,
+        252
+      ],
+      "match": true
+    },
+    {
+      "model": "CausalTokenAttentionKT",
+      "release": "R00",
+      "expected": [
+        20408,
+        763342,
+        156069,
+        1579
+      ],
+      "observed": [
+        20408,
+        763342,
+        156069,
+        1579
+      ],
+      "match": true
+    },
+    {
+      "model": "CausalTokenAttentionKT",
+      "release": "R11",
+      "expected": [
+        77877,
+        808049,
+        53893,
+        697
+      ],
+      "observed": [
+        77877,
+        808049,
+        53893,
+        697
+      ],
+      "match": true
+    }
+  ]
+}

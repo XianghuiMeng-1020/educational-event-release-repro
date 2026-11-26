@@ -1,0 +1,7 @@
+model,transition,added_unsupported_mass,ambiguity_removed_count,net_nc_count_change,refinement_improves_unconditional_nc
+TransparentActionPFA,S0->S1,57534,3157,54377,False
+TransparentActionPFA,S1->S2,2917,26,2891,False
+TransparentActionPFA,S2->S3,19919,3,19916,False
+ActionTokenGRU,S0->S1,57534,102557,-45023,True
+ActionTokenGRU,S1->S2,2917,297,2620,False
+ActionTokenGRU,S2->S3,19919,16118,3801,False

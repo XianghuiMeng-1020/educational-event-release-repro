@@ -1,0 +1,82 @@
+{
+  "events": 4286981,
+  "duplicate_rich_signatures": 0,
+  "unique_rich_signatures": 4286981,
+  "development_users_in_library": 31753,
+  "geometry": {
+    "S0": {
+      "U1_Rge2": 1787,
+      "U1_Rge2_events": 3595,
+      "Uge2_Fp1": 103924,
+      "Uge2_Fpge2": 88788,
+      "U1_Fpge2": 80,
+      "Rge2_Fp1": 105631,
+      "Fpge2": 88868,
+      "Uge2_Fg1": 104126,
+      "Uge2_Fgge2": 88586,
+      "U1_Fgge2": 80,
+      "Rge2_Fg1": 105833,
+      "Fgge2": 88666,
+      "keys": 259838,
+      "events": 4286981,
+      "U_gt_R": 0
+    },
+    "S1": {
+      "U1_Rge2": 1911,
+      "U1_Rge2_events": 3844,
+      "Uge2_Fp1": 208342,
+      "Uge2_Fpge2": 68190,
+      "U1_Fpge2": 42,
+      "Rge2_Fp1": 210211,
+      "Fpge2": 68232,
+      "Uge2_Fg1": 208342,
+      "Uge2_Fgge2": 68190,
+      "U1_Fgge2": 42,
+      "Rge2_Fg1": 210211,
+      "Fgge2": 68232,
+      "keys": 511770,
+      "events": 4286981,
+      "U_gt_R": 0
+    },
+    "S2": {
+      "U1_Rge2": 1915,
+      "U1_Rge2_events": 3852,
+      "Uge2_Fp1": 213030,
+      "Uge2_Fpge2": 63702,
+      "U1_Fpge2": 43,
+      "Rge2_Fp1": 214902,
+      "Fpge2": 63745,
+      "Uge2_Fg1": 213030,
+      "Uge2_Fgge2": 63702,
+      "U1_Fgge2": 43,
+      "Rge2_Fg1": 214902,
+      "Fgge2": 63745,
+      "keys": 523378,
+      "events": 4286981,
+      "U_gt_R": 0
+    },
+    "S3": {
+      "U1_Rge2": 1931,
+      "U1_Rge2_events": 3882,
+      "Uge2_Fp1": 273299,
+      "Uge2_Fpge2": 0,
+      "U1_Fpge2": 0,
+      "Rge2_Fp1": 275230,
+      "Fpge2": 0,
+      "Uge2_Fg1": 273299,
+      "Uge2_Fgge2": 0,
+      "U1_Fgge2": 0,
+      "Rge2_Fg1": 275230,
+      "Fgge2": 0,
+      "keys": 605097,
+      "events": 4286981,
+      "U_gt_R": 0
+    }
+  },
+  "key_counts": {
+    "S0": 259838,
+    "S1": 511770,
+    "S2": 523378,
+    "S3": 605097
+  }
+}

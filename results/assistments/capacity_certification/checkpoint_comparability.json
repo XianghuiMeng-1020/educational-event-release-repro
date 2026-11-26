@@ -1,0 +1,124 @@
+{
+  "root_keys": [
+    "ActionTokenGRU",
+    "TransparentActionPFA",
+    "kappa",
+    "n_frame_users",
+    "p2_status_derived_from_intervals",
+    "schemas_gru",
+    "schemas_pfa",
+    "tau"
+  ],
+  "non_model_keys": [
+    "kappa",
+    "n_frame_users",
+    "p2_status_derived_from_intervals",
+    "schemas_gru",
+    "schemas_pfa",
+    "tau"
+  ],
+  "root_scalars": {
+    "kappa": 0.05,
+    "n_frame_users": 6766,
+    "p2_status_derived_from_intervals": true,
+    "schemas_gru": [
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "schemas_pfa": [
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "tau": 0.8
+  },
+  "per_schema_record_keys": {
+    "ActionTokenGRU": [
+      "n_actual_in",
+      "n_contained",
+      "n_events",
+      "n_exact_sig_in",
+      "n_false_stable",
+      "n_set_valued",
+      "n_stable",
+      "n_supported",
+      "n_unsupported",
+      "p2_actual_risk",
+      "p2_eligible",
+      "p2_risk_max",
+      "p2_risk_min",
+      "p2_status"
+    ],
+    "TransparentActionPFA": [
+      "n_actual_in",
+      "n_contained",
+      "n_events",
+      "n_exact_sig_in",
+      "n_false_stable",
+      "n_set_valued",
+      "n_stable",
+      "n_supported",
+      "n_unsupported",
+      "p2_actual_risk",
+      "p2_eligible",
+      "p2_risk_max",
+      "p2_risk_min",
+      "p2_status"
+    ]
+  },
+  "n_events_is_a_count_not_an_event_identifier": true,
+  "identity_fields": [],
+  "event_identity_available": false,
+  "equal_aggregate_values_are_not_checkpoint_identifiers": true,
+  "common_n": 6744,
+  "zero_width_intervals_in_common_cohort": {
+    "TransparentActionPFA": {
+      "S0": 4767,
+      "S1": 6574,
+      "S2": 6724,
+      "S3": 6744
+    },
+    "ActionTokenGRU": {
+      "S0": 2813,
+      "S1": 3847,
+      "S2": 3924,
+      "S3": 6744
+    }
+  },
+  "stored_actual_risk_equal_across_schema_pairs": {
+    "TransparentActionPFA": {
+      "S0_S1": 6296,
+      "S1_S2": 6706,
+      "S2_S3": 6581,
+      "S0_S3": 6109
+    },
+    "ActionTokenGRU": {
+      "S0_S1": 6276,
+      "S1_S2": 6703,
+      "S2_S3": 6573,
+      "S0_S3": 6083
+    }
+  },
+  "stored_actual_risk_equal_across_all_four_schemas": {
+    "TransparentActionPFA": 6109,
+    "ActionTokenGRU": 6083
+  },
+  "stored_interval_endpoints_equal_across_schema_pairs": {
+    "TransparentActionPFA": {
+      "S0_S1": 4733,
+      "S1_S2": 6551,
+      "S2_S3": 6566,
+      "S0_S3": 4682
+    },
+    "ActionTokenGRU": {
+      "S0_S1": 4649,
+      "S1_S2": 6511,
+      "S2_S3": 3864,
+      "S0_S3": 2775
+    }
+  },
+  "statement": "The new comparison fixes the eligible users and capacity budget but retains schema-specific last-supported checkpoints. It is not a matched-event or matched-time comparison."
+}

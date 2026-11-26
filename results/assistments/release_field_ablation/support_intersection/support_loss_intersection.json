@@ -1,0 +1,33 @@
+{
+  "B": 919411,
+  "H": 905399,
+  "A": 884206,
+  "J": 861942,
+  "L_H": 14012,
+  "L_A": 35205,
+  "B_minus_J": 57469,
+  "c_L_H_intersection_L_A": 6809,
+  "joint_only_H_and_A_not_J": 15061,
+  "count_interaction_B_minus_J_minus_L_H_minus_L_A": 8252,
+  "identity_joint_only_equals_8252_plus_c": true,
+  "original_8252_equals_joint_only_only_if_c_is_zero": true,
+  "c_is_zero": false,
+  "forbidden": {
+    "R11_without_R10": 0,
+    "R11_without_R01": 0,
+    "R10_without_R00": 0,
+    "R01_without_R00": 0
+  },
+  "patterns": {
+    "0000": 20408,
+    "1000": 6809,
+    "1100": 28396,
+    "1010": 7203,
+    "1110": 15061,
+    "1111": 861942
+  },
+  "pattern_sum": 939819,
+  "patterns_are_mutually_exclusive_and_exhaustive": true,
+  "support_identical_across_consumers": true,
+  "interpretation": "8,252 is the unsupported-count interaction |B\\J|-|B\\H|-|B\\A|. The event count supported by both single-field releases but not the joint release is 8252+c."
+}

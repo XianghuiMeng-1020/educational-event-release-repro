@@ -1,0 +1,71 @@
+{
+  "status": "SPECIFICATION_ONLY_NOT_EXECUTED",
+  "data": {
+    "primary_clock": "naive CSV civil start_time and end_time, compared as datetime64 microseconds from one mixed-format parse",
+    "timezone_mixture": false,
+    "valid_interval": "parseable start, parseable end, and end >= start",
+    "invalid_interval_policy": "excluded from pilot targets and from chronological history updates; retained in the reconstructed files; retained in the development release-key multiset",
+    "history": "H(e) = {p same student, valid interval, end(p) < start(e)}",
+    "history_order": [
+      "ascending end",
+      "ascending source_row"
+    ],
+    "target_order": [
+      "ascending start",
+      "ascending source_row"
+    ],
+    "target_not_in_own_history": true,
+    "pfa_timing": "pre-state is H(e); the candidate completion is ingested only inside a restore-protected score; the realized event joins later histories only after its own end",
+    "gru_timing": "prefix outcomes come from H(e); current action tokens are included; current outcome token is withheld; this is an action-conditioned current-event score",
+    "not_the_same_estimand": true,
+    "within_user_validity_is_not_global_prospective_deployment": true,
+    "inversion_note": {
+      "count_name_in_tempfor": "inversions_overlapping_previous_interval",
+      "reported_value": 2540774,
+      "code": "previous.start > next.start AND next.start < previous.end",
+      "reading": "This is a start inversion for which the next start is numerically less than the previous end. For a valid previous interval, a start inversion places the next start strictly before the previous interval, so the next start is not inside [previous.start, previous.end]. The 8355 adjacent pairs with previous.start < next.start < previous.end are the adjacent forward containments."
+    }
+  },
+  "archive_sha256": "7bb18f932f97e63c2eb34bb869c44cd4f46f4adec4d7fe02298578dbba572445",
+  "reconstructed_hashes": {
+    "development": "69b6b7b38738d293651b728326658c1ce517c87661d012bc03ee2ced228e9d70",
+    "calibration": "5e8202d6f89b501a1aaea662ba62a265de1e5c168a0bcf92e3762760b4c6fd3d",
+    "confirmatory": "0193ddd7b26517f1b48591d09d86f5f3ce8b9930a1285006833fce4ea5096f99"
+  },
+  "development_dictionary": "full reconstructed development multiset, including invalid intervals",
+  "pfa": {
+    "parameters": "none",
+    "history": "H(e)",
+    "score": "post-ingest mastery at tau 0.80",
+    "update": "all valid events, including unsupported, once end < a later target start"
+  },
+  "gru": {
+    "architecture": "ActionTokenGRU emb 32 hid 64, historical vocabulary width",
+    "target": "current correctness",
+    "histories": "chronological H(e), last 40 events, 64 tokens, 32 current actions, no current outcome token",
+    "epochs": 2,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "user_cap_per_epoch": 3000,
+    "primary_seed": 17,
+    "user_selection": "replay NeuralPilot.fit shuffle on the original first-seen development user order among users with at least two reconstructed events; do not reselect users because chronological order changed",
+    "adapter": "required; do not expect fit to construct H(e)"
+  },
+  "evaluation_not_run_in_protocol": [
+    "S0-S3 confirmatory certificates",
+    "false-Stable on the full confirmatory population",
+    "paired schema transitions",
+    "threshold sensitivity",
+    "capacity certificates",
+    "predictive diagnostics",
+    "learner-clustered uncertainty",
+    "file-order comparison tables"
+  ],
+  "checkpoint": {
+    "native": "last supported target in ascending start time, then source_row",
+    "justification": "The chronology-valid audit scores a target when its interaction is evaluated, using history completed before its start. The walk order is therefore start order, and the running last supported event in that walk is the checkpoint.",
+    "not_used": "completion-time order is the history-update order, not the decision order",
+    "matched_event_comparison": "a later comparison must name one shared event identity across schemas rather than compare independently chosen last events"
+  },
+  "interpretation": "A change in Event NC, capacity NC, or AUC after this protocol is a new empirical result. An input-contract mismatch or a nonzero future-outcome count is an implementation failure. Those are different outcomes."
+}

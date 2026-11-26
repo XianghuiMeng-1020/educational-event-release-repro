@@ -1,0 +1,15 @@
+{
+  "epoch_sizes": [
+    3000,
+    3000
+  ],
+  "union": 5715,
+  "intersection": 285,
+  "selection_sha256": "cbe4fd9e0075c78ae5997892153d37920497d14c64a21af3ffbf3594e5c907e2",
+  "neural_examples_by_epoch": [
+    90950,
+    90942
+  ],
+  "bkt_weighting": "same target multiset as the neural models, including users selected in both epochs",
+  "matches_chronorep_counts": true
+}

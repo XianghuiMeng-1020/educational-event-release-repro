@@ -1,0 +1,53 @@
+{
+  "seed": 17,
+  "examples_by_epoch": [
+    90950,
+    90942
+  ],
+  "loss_by_epoch": [
+    0.2748273175633694,
+    0.2009701977160379
+  ],
+  "optimizer_steps_by_epoch": [
+    1422,
+    1421
+  ],
+  "nonfinite_losses_by_epoch": [
+    0,
+    0
+  ],
+  "batch_size": 64,
+  "parameter_count": 88897,
+  "architecture": {
+    "name": "CausalTokenAttentionKT",
+    "consumer_name": "Causal Token-Attention Consumer",
+    "token_embedding_dim": 64,
+    "layers": 2,
+    "heads": 4,
+    "feedforward_dim": 128,
+    "activation": "GELU",
+    "dropout": 0.1,
+    "norm": "LayerNorm",
+    "norm_eps": 1e-05,
+    "max_positions": 64,
+    "positional_convention": "left_aligned_index_in_retained_64_token_window",
+    "readout": "last_real_token",
+    "combination": "sum of skill embedding and action-or-outcome embedding",
+    "padding_mask": "positional, not token-id based; unseen skills may use id 0 and remain real tokens",
+    "causal_mask": "standard upper-triangular block; not AKT monotonic attention",
+    "batch_size": 64,
+    "epochs": 2,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "loss": "binary_cross_entropy",
+    "seed": 17
+  },
+  "max_sequence_length": 64,
+  "deterministic_repeat_abs_diff": 0.0,
+  "elapsed_sec": 65.56557893753052,
+  "rss_mb": 2522.984375,
+  "warm_start": false,
+  "checkpoint_sha256": "8728fb05b33399df24daaaa48a76b3c6d6870aa2cee8419909cdeda5f88c0aaa",
+  "checkpoint_bytes": 366214,
+  "reload_abs_diff": 0.0
+}

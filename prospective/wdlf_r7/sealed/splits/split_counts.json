@@ -1,0 +1,12 @@
+{
+  "events": {
+    "development": 4286981,
+    "confirmatory": 939910,
+    "calibration": 888158
+  },
+  "users": {
+    "development": 31753,
+    "calibration": 6804,
+    "confirmatory": 6766
+  }
+}

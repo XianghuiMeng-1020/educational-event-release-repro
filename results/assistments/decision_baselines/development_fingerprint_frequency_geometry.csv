@@ -1,0 +1,5 @@
+schema,keys,development_events,duplicate_rich_signatures,unique_rich_signatures,mean_pfa_fingerprints,mean_gru_fingerprints,keys_with_pfa_frequency_tie,keys_with_gru_frequency_tie,keys_with_single_pfa_fingerprint,keys_with_single_gru_fingerprint,max_pfa_fingerprint_frequency,max_gru_fingerprint_frequency,rich_signature_frequency_uniformly_one
+S0,259838,4286981,0,4286981,2.323555446085638,2.3212193751491315,21360,21345,170970,171172,2421,2421,True
+S1,511770,4286981,0,4286981,1.1797252672098795,1.1797252672098795,18614,18614,443538,443538,2421,2421,True
+S2,523378,4286981,0,4286981,1.1561376290176508,1.1561376290176508,17162,17162,459633,459633,2421,2421,True
+S3,605097,4286981,0,4286981,1,1,0,0,605097,605097,2421,2421,True

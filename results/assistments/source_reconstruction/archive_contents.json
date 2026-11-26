@@ -1,0 +1,21 @@
+{
+  "members": [
+    {
+      "name": "2012-2013-data-with-predictions-4-final.csv",
+      "bytes": 3009494391,
+      "compressed_bytes": 576365188,
+      "date_time": [
+        2013,
+        11,
+        20,
+        17,
+        22,
+        36
+      ]
+    }
+  ],
+  "expected_member": "2012-2013-data-with-predictions-4-final.csv",
+  "expected_member_present": true,
+  "csv_uncompressed_bytes": 3009494391,
+  "csv_sha256": "1d06aee9e649c5ba9db49052fe9a86e68d0c3ccb4709a7487289d7721f5464db"
+}

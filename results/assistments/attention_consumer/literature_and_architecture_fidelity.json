@@ -1,0 +1,32 @@
+{
+  "proposed_name": "CausalTokenAttentionKT",
+  "also_called": "Causal Token-Attention Consumer",
+  "not_claimed": [
+    "SAKT",
+    "AKT",
+    "SAINT"
+  ],
+  "rows": [
+    {
+      "model": "SAKT (Pandey and Karypis, 2019)",
+      "task": "predict the response to the next exercise from past interactions",
+      "current_actions": false,
+      "attention": "self-attention over past interactions with the current exercise as query",
+      "embeddings": "exercise and interaction embeddings"
+    },
+    {
+      "model": "AKT (Ghosh, Heffernan, and Lan, KDD 2020)",
+      "task": "predict a response from past context and the current question",
+      "current_actions": false,
+      "attention": "context-aware monotonic attention with distance decay",
+      "embeddings": "Rasch-based question and response embeddings"
+    },
+    {
+      "model": "CausalTokenAttentionKT",
+      "task": "P(current correctness | completed history, current skill, current action tokens)",
+      "current_actions": true,
+      "attention": "two-layer causal Transformer encoder with a standard triangular mask",
+      "embeddings": "sum of frozen-vocabulary skill and action embeddings plus learned positions"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "frozen_before_confirmatory_rule_selection": true,
+  "primary": "P00 = U>=2 OR R>=2",
+  "alternatives_are_sensitivity_only": true,
+  "tau_primary": 0.8,
+  "fingerprint_rules": "P17-P21 are consumer-specific diagnostics",
+  "interval_isolation": "support eligibility does not change stored candidate minima or maxima",
+  "development_invalid_intervals_retained_in_library": 475
+}

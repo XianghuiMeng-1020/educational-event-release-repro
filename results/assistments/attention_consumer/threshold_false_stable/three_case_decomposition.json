@@ -1,0 +1,141 @@
+{
+  "implication": "FalseStable implies Stable and not fingerprint-covered. The converse is not assumed.",
+  "implication_violations": 0,
+  "bounds_ok": true,
+  "identity_ok": true,
+  "cells": [
+    {
+      "schema": "S0",
+      "tau": 0.7,
+      "n_S": 766955,
+      "n_U": 32741,
+      "n_FS": 1657,
+      "case": "A",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S0",
+      "tau": 0.8,
+      "n_S": 763342,
+      "n_U": 33420,
+      "n_FS": 1579,
+      "case": "A",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S0",
+      "tau": 0.9,
+      "n_S": 749740,
+      "n_U": 34627,
+      "n_FS": 1692,
+      "case": "A",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S1",
+      "tau": 0.7,
+      "n_S": 817556,
+      "n_U": 13896,
+      "n_FS": 624,
+      "case": "A",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S1",
+      "tau": 0.8,
+      "n_S": 808049,
+      "n_U": 13918,
+      "n_FS": 697,
+      "case": "A",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S1",
+      "tau": 0.9,
+      "n_S": 784873,
+      "n_U": 13933,
+      "n_FS": 1010,
+      "case": "A",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S2",
+      "tau": 0.7,
+      "n_S": 814979,
+      "n_U": 12223,
+      "n_FS": 620,
+      "case": "A",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S2",
+      "tau": 0.8,
+      "n_S": 805452,
+      "n_U": 12242,
+      "n_FS": 694,
+      "case": "A",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S2",
+      "tau": 0.9,
+      "n_S": 782238,
+      "n_U": 12244,
+      "n_FS": 1007,
+      "case": "A",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S3",
+      "tau": 0.7,
+      "n_S": 839131,
+      "n_U": 0,
+      "n_FS": 0,
+      "case": "B",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S3",
+      "tau": 0.8,
+      "n_S": 839131,
+      "n_U": 0,
+      "n_FS": 0,
+      "case": "B",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    },
+    {
+      "schema": "S3",
+      "tau": 0.9,
+      "n_S": 839131,
+      "n_U": 0,
+      "n_FS": 0,
+      "case": "B",
+      "identity_holds": true,
+      "false_stable_equals_action_noncontainment": true,
+      "covered_but_false_stable_would_break_implication": 0
+    }
+  ],
+  "note": "A noncovered realized fingerprint can still induce the certificate action. That event is n_U and not n_FS."
+}

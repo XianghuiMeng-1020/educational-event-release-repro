@@ -1,0 +1,9 @@
+consumer,schema,stable,set_valued,unsupported,false_stable,expected,match
+TransparentActionPFA,S0,916845,2566,20408,45,"(916845, 2566, 20408, 45)",True
+TransparentActionPFA,S1,861927,15,77877,0,"(861927, 15, 77877, 0)",True
+TransparentActionPFA,S2,859025,4,80790,0,"(859025, 4, 80790, 0)",True
+TransparentActionPFA,S3,839131,0,100688,0,"(839131, 0, 100688, 0)",True
+ActionTokenGRU,S0,810576,108835,20408,1077,"(810576, 108835, 20408, 1077)",True
+ActionTokenGRU,S1,846772,15170,77877,252,"(846772, 15170, 77877, 252)",True
+ActionTokenGRU,S2,844157,14872,80790,250,"(844157, 14872, 80790, 250)",True
+ActionTokenGRU,S3,839131,0,100688,0,"(839131, 0, 100688, 0)",True

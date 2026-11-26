@@ -1,0 +1,17 @@
+{
+  "loss_by_epoch": [
+    0.5929862909499759,
+    0.5903327242253537
+  ],
+  "optimizer_steps_by_epoch": [
+    90950,
+    90942
+  ],
+  "nonfinite_examples_skipped": 0,
+  "reload_abs_diff": 0.0,
+  "checkpoint": "results/assistments/matched_estimand_controls/track_a_count_gru_seed17.pt",
+  "checkpoint_sha256": "f0b7ffb7ab678f5851335f34e2ff10e09ec561ec4c79b7038cef6f2b259b74b5",
+  "parameters": 33857,
+  "updates": "one Adam step per occurrence",
+  "order": "epoch cohort order, no shuffle"
+}

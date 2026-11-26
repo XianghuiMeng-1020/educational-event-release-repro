@@ -1,0 +1,16 @@
+track,quantity,point,ci_low,ci_high,replicates,seed,resample
+A,A_PFA_auc,0.67718232059501138,0.67311400559963308,0.68140408320502055,2000,20313,paired confirmatory learners with replacement
+A,A_GRU_auc,0.67023401795224113,0.66612907079276995,0.67424331108957969,2000,20313,paired confirmatory learners with replacement
+A,A_auc_diff,-0.0069483026427702432,-0.0085067532757582501,-0.0053427855978139555,2000,20313,paired confirmatory learners with replacement
+A,A_log_loss_diff,0.0038137404591909174,0.0028859360603029601,0.0048218598136783638,2000,20313,paired confirmatory learners with replacement
+A,A_brier_diff,0.0020223075743897589,0.0016573259246104206,0.0024065504358785892,2000,20313,paired confirmatory learners with replacement
+B,B_LOGIT_auc,0.95420074631108409,0.95187350046830244,0.95631780932318933,2000,20313,paired confirmatory learners with replacement
+B,B_GRU_auc,0.9790957204836479,0.97776954695200413,0.98032096466827223,2000,20313,paired confirmatory learners with replacement
+B,B_auc_diff,-0.024894974172563811,-0.026112351307896336,-0.023750766670596755,2000,20313,paired confirmatory learners with replacement
+B,B_log_loss_diff,0.082256685999194223,0.079508505127455623,0.085033104576281923,2000,20313,paired confirmatory learners with replacement
+B,B_brier_diff,0.022166631516536001,0.021381028113584718,0.022954046593329145,2000,20313,paired confirmatory learners with replacement
+B_certificate,S0_event_nc_rate,0.28468141205913056,0.27733168499063449,0.29240792631002993,2000,20313,paired confirmatory learners with replacement
+B_certificate,S1_event_nc_rate,0.24425341475326631,0.23886409627279523,0.25014904295228707,2000,20313,paired confirmatory learners with replacement
+B_certificate,S2_event_nc_rate,0.24673687167422664,0.24132890986040989,0.25262149390899086,2000,20313,paired confirmatory learners with replacement
+B_certificate,S3_event_nc_rate,0.1071355229038783,0.10284043858131735,0.1124074365218575,2000,20313,paired confirmatory learners with replacement
+B_certificate,S1_minus_S0_event_nc_rate,-0.040427997305864216,-0.043814669751757372,-0.037084190988613874,2000,20313,paired confirmatory learners with replacement

@@ -1,0 +1,40 @@
+{
+  "frozen_before_training_and_inference": true,
+  "history": "H(e) = {same student, valid interval, end(p) < start(e)}",
+  "history_order": [
+    "end",
+    "source_row"
+  ],
+  "target_order": [
+    "start",
+    "source_row"
+  ],
+  "primary_capacity_checkpoint": "maximum completion time among valid supported targets; source_row breaks ties",
+  "secondary_checkpoint": "maximum start time among valid supported targets; source_row breaks ties",
+  "matched_checkpoint": "maximum completion time among targets supported under all four schemas; source_row breaks ties",
+  "valid_targets": 939819,
+  "invalid_targets": 91,
+  "eligible_users": {
+    "S0": 6754,
+    "S1": 6749,
+    "S2": 6746,
+    "S3": 6744
+  },
+  "users_whose_completion_and_start_checkpoints_differ": {
+    "S0": 220,
+    "S1": 185,
+    "S2": 183,
+    "S3": 146
+  },
+  "matched_users": 6744,
+  "targets_with_a_completion_during_the_interaction": 120908,
+  "checkpoint_reference_mismatches": 0,
+  "history_reference": {
+    "samples": 200,
+    "identity_mismatches": 0,
+    "future_members": 0
+  },
+  "tau_primary": 0.8,
+  "kappa_primary": 0.05,
+  "tie_rule_primary": "adversarial"
+}

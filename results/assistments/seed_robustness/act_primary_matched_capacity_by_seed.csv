@@ -1,0 +1,13 @@
+analysis,model,schema,kappa,tie_rule,n_full,n_eligible,n_no_checkpoint,B,guaranteed_in,guaranteed_out,unresolved,all_user_capacity_nc,seed,inside_interval,outside_interval,false_guaranteed_in,false_guaranteed_out
+matched_event,ActionTokenGRU,S0,0.05,adversarial,6766,6744,22,337,2,5273,1469,0.2203665385752291,17,,,,
+matched_event,ActionTokenGRU,S1,0.05,adversarial,6766,6744,22,337,169,6176,399,0.0622228791013893,17,,,,
+matched_event,ActionTokenGRU,S2,0.05,adversarial,6766,6744,22,337,206,6283,255,0.0409399940880874,17,,,,
+matched_event,ActionTokenGRU,S3,0.05,adversarial,6766,6744,22,337,337,6407,0,0.0032515518770322,17,,,,
+,ActionTokenGRU,S0,0.05,adversarial,6766,6744,22,337,9,5129,1606,0.24061483890038426,29,6744.0,0.0,0.0,0.0
+,ActionTokenGRU,S1,0.05,adversarial,6766,6744,22,337,225,6159,360,0.05645876441028673,29,6744.0,0.0,0.0,0.0
+,ActionTokenGRU,S2,0.05,adversarial,6766,6744,22,337,239,6244,261,0.04182678096364174,29,6744.0,0.0,0.0,0.0
+,ActionTokenGRU,S3,0.05,adversarial,6766,6744,22,337,337,6407,0,0.00325155187703222,29,6744.0,0.0,0.0,0.0
+,ActionTokenGRU,S0,0.05,adversarial,6766,6744,22,337,3,5047,1694,0.25362104640851313,41,6744.0,0.0,0.0,0.0
+,ActionTokenGRU,S1,0.05,adversarial,6766,6744,22,337,171,6138,435,0.06754360035471475,41,6744.0,0.0,0.0,0.0
+,ActionTokenGRU,S2,0.05,adversarial,6766,6744,22,337,235,6264,245,0.03946201596216376,41,6744.0,0.0,0.0,0.0
+,ActionTokenGRU,S3,0.05,adversarial,6766,6744,22,337,337,6407,0,0.00325155187703222,41,6744.0,0.0,0.0,0.0

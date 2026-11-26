@@ -1,0 +1,16 @@
+model,left,right,n_matched,interval_contraction_failures,guaranteed_in_not_retained,guaranteed_out_not_retained,max_lo_decrease,max_hi_increase
+TransparentActionPFA,R00,R10,6749,0,0,0,0,0
+TransparentActionPFA,R00,R01,6749,0,0,0,0,0
+TransparentActionPFA,R10,R11,6749,0,0,0,0,0
+TransparentActionPFA,R01,R11,6749,0,0,0,0,0
+TransparentActionPFA,R00,R11,6749,0,0,0,0,0
+ActionTokenGRU,R00,R10,6749,0,0,0,0,0
+ActionTokenGRU,R00,R01,6749,0,0,0,0,0
+ActionTokenGRU,R10,R11,6749,0,0,0,0,0
+ActionTokenGRU,R01,R11,6749,0,0,0,0,0
+ActionTokenGRU,R00,R11,6749,0,0,0,0,0
+CausalTokenAttentionKT,R00,R10,6749,0,0,0,0,0
+CausalTokenAttentionKT,R00,R01,6749,0,0,0,0,0
+CausalTokenAttentionKT,R10,R11,6749,0,0,0,0,0
+CausalTokenAttentionKT,R01,R11,6749,0,0,0,0,0
+CausalTokenAttentionKT,R00,R11,6749,0,0,0,0,0

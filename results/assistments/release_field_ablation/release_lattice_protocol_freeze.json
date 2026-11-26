@@ -1,0 +1,26 @@
+{
+  "releases": {
+    "R00": "(problem_id, correct)",
+    "R10": "(problem_id, correct, hint_count)",
+    "R01": "(problem_id, correct, attempt_count)",
+    "R11": "(problem_id, correct, hint_count, attempt_count)"
+  },
+  "field_source": "original hint_count and attempt_count columns after the frozen integer normalization",
+  "not_derived_from_action_stream": true,
+  "history": "same student, valid interval, end < start, ordered by (end, source_row)",
+  "models": [
+    "TransparentActionPFA",
+    "ActionTokenGRU",
+    "CausalTokenAttentionKT"
+  ],
+  "no_hist_or_len": true,
+  "training": false,
+  "primary_tau": 0.8,
+  "kappa": 0.05,
+  "tie_rule": "adversarial",
+  "bootstrap_seed": 20312,
+  "parameter_counts": {
+    "ActionTokenGRU": 33857,
+    "CausalTokenAttentionKT": 88897
+  }
+}

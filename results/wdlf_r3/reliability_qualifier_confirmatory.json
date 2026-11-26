@@ -1,0 +1,78 @@
+{
+  "freeze_rule": {
+    "feature": "n_users",
+    "freeze_path": "configs/reliability_qualifier_rule.txt",
+    "n_min": 5,
+    "rule_type": "n_users_ge",
+    "source_excerpt": "QUALIFIED_STABLE <=> Stable AND n_users(key) >= 5"
+  },
+  "models": {
+    "ActionTokenGRU": {
+      "disqualified_false_stable": 489,
+      "disqualified_stable": 35394,
+      "false_stable": 1539,
+      "false_stable_rate_among_stable": 0.0019224763594118896,
+      "fs_rate_among_qualified_stable": 0.0013723050542648627,
+      "fs_reduction_frac": 0.31773879142300193,
+      "fs_remaining": 1050,
+      "fs_removed": 489,
+      "gates": {
+        "coverage_ok": true,
+        "fs_reduction_ok": true,
+        "pass_a": true,
+        "pass_b": false
+      },
+      "model": "ActionTokenGRU",
+      "n_events": 939910,
+      "n_min": 5,
+      "qualified_false_stable": 1050,
+      "qualified_stable": 765136,
+      "retained_stable_frac": 0.9557867912507964,
+      "runtime_s": 2356.0245048999786,
+      "schema": "S0",
+      "set_valued": 118972,
+      "stable": 800530,
+      "support_rate": 0.9782872828249514,
+      "supported": 919502,
+      "tau": 0.8,
+      "unsupported": 20408
+    },
+    "TransparentActionPFA": {
+      "disqualified_false_stable": 14,
+      "disqualified_stable": 37296,
+      "false_stable": 37,
+      "false_stable_rate_among_stable": 4.037908319837262e-05,
+      "fs_rate_among_qualified_stable": 2.616550249141089e-05,
+      "fs_reduction_frac": 0.3783783783783784,
+      "fs_remaining": 23,
+      "fs_removed": 14,
+      "gates": {
+        "coverage_ok": true,
+        "fs_reduction_ok": true,
+        "pass_a": true,
+        "pass_b": false
+      },
+      "model": "transparent",
+      "n_events": 939910,
+      "n_min": 5,
+      "qualified_false_stable": 23,
+      "qualified_stable": 879020,
+      "retained_stable_frac": 0.9592978841360404,
+      "runtime_s": 222.80190253257751,
+      "schema": "S0",
+      "set_valued": 3186,
+      "stable": 916316,
+      "support_rate": 0.9782872828249514,
+      "supported": 919502,
+      "tau": 0.8,
+      "unsupported": 20408
+    }
+  },
+  "recommendation": {
+    "label": "PASS-A",
+    "note": "PASS-A/B decided from TransparentActionPFA/S0 confirmatory gates on frozen n_users>=5. GRU reported if run; not used to retune.",
+    "transparent_pass_a": true
+  },
+  "runtime_s": 2586.71395111084,
+  "utc": "2026-08-08T11:20:48.868713+00:00"
+}

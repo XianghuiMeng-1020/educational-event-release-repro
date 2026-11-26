@@ -1,0 +1,132 @@
+{
+  "created_utc": "2026-08-08T04:19:53.943980+00:00",
+  "hashes": {
+    "categorical_dkt_r0.pt": "ff573a4f75ef05d91beef62ccc2b7599cab52dc5a1d92e8ecbeb8c850d05d527",
+    "categorical_dkt_r1.pt": "6781890f8807d6c58510cab5419017e339412bc111bed5d63873253d38b077e2",
+    "data": "1388748a532916aed113ec82a17e92b0177c92d9e26230f934716f2fdc0b1f84",
+    "dictionary": "540ffd39ff682603c65d28d6bb60804f30f016d8a31622b4eeaaff2cc4a60bec",
+    "dkt_r0_config_hash": "d96622e289269ab975df3907c13a7f30d29764d3b9b81799f9b96ad496436cfe",
+    "dkt_r1_config_hash": "4a26ef2a7db3c73abad7d3ea4932ff25f4865789eae56509a5ca983bfd0fdc5c",
+    "pfa_option_params.json": "ae1b9b11911f8718d09abe3c47e315a45015e53b068b4449851e70bac6132c6b",
+    "pfa_r1_config_hash": "1574fa20c029866040701d5235123ebfce36c97005cbefac6947910502e0f124"
+  },
+  "models": {
+    "CategoricalDKT": {
+      "p1": {
+        "action_contained": 138039,
+        "action_containment_rate_supported": 1.0,
+        "actual_answer_in_cdev": 138036,
+        "actual_answer_in_cdev_rate_supported": 0.9999782670114967,
+        "false_stable": 0,
+        "false_stable_rate_among_stable": 0.0,
+        "model": "CategoricalDKT",
+        "n_events": 294426,
+        "set_valued": 5303,
+        "set_valued_rate": 0.018011316935325004,
+        "stable": 132736,
+        "stable_given_supported": 0.9615833206557567,
+        "stable_rate": 0.45082975009000564,
+        "supported": 138039,
+        "supported_rate": 0.4688410670253306,
+        "tau": 0.8,
+        "unsupported": 156387,
+        "unsupported_rate": 0.5311589329746693
+      },
+      "p2": {
+        "ambiguous": 288,
+        "ambiguous_rate_eligible": 0.2829076620825147,
+        "certificate_coverage": 0.9970617042115573,
+        "external_validity": {
+          "actual_risk_outside_interval": 0,
+          "actual_risk_outside_interval_rate": 0.0,
+          "false_cert_rate_among_resolved": 0.0,
+          "false_gin": 0,
+          "false_gin_rate": 0.0,
+          "false_gout": 0,
+          "false_gout_rate": 0.0,
+          "n_ambiguous": 288,
+          "n_eligible": 1018,
+          "n_guaranteed_in": 1,
+          "n_guaranteed_out": 729,
+          "note": "unresolved/ambiguous excluded from false-cert denominator; truth=top-k on actual risks"
+        },
+        "guaranteed_in": 1,
+        "guaranteed_out": 729,
+        "kappa": 0.05,
+        "membership_method": "interval_robust_rank_conservative",
+        "n_eligible": 1018,
+        "n_frame": 1021,
+        "p2_all_user_noncertification_rate": 0.2850146914789422,
+        "p2_no_checkpoint_users": 3,
+        "seat_count": 51,
+        "unresolved": 288,
+        "unresolved_rate_eligible": 0.2829076620825147
+      }
+    },
+    "PFA-Option": {
+      "p1": {
+        "action_contained": 138039,
+        "action_containment_rate_supported": 1.0,
+        "actual_answer_in_cdev": 138036,
+        "actual_answer_in_cdev_rate_supported": 0.9999782670114967,
+        "false_stable": 0,
+        "false_stable_rate_among_stable": 0.0,
+        "model": "PFA-Option",
+        "n_events": 294426,
+        "set_valued": 11,
+        "set_valued_rate": 3.7360830904879326e-05,
+        "stable": 138028,
+        "stable_given_supported": 0.9999203123754881,
+        "stable_rate": 0.46880370619442574,
+        "supported": 138039,
+        "supported_rate": 0.4688410670253306,
+        "tau": 0.8,
+        "unsupported": 156387,
+        "unsupported_rate": 0.5311589329746693
+      },
+      "p2": {
+        "ambiguous": 3,
+        "ambiguous_rate_eligible": 0.0029469548133595285,
+        "certificate_coverage": 0.9970617042115573,
+        "external_validity": {
+          "actual_risk_outside_interval": 0,
+          "actual_risk_outside_interval_rate": 0.0,
+          "false_cert_rate_among_resolved": 0.0,
+          "false_gin": 0,
+          "false_gin_rate": 0.0,
+          "false_gout": 0,
+          "false_gout_rate": 0.0,
+          "n_ambiguous": 3,
+          "n_eligible": 1018,
+          "n_guaranteed_in": 49,
+          "n_guaranteed_out": 966,
+          "note": "unresolved/ambiguous excluded from false-cert denominator; truth=top-k on actual risks"
+        },
+        "guaranteed_in": 49,
+        "guaranteed_out": 966,
+        "kappa": 0.05,
+        "membership_method": "interval_robust_rank_conservative",
+        "n_eligible": 1018,
+        "n_frame": 1021,
+        "p2_all_user_noncertification_rate": 0.005876591576885406,
+        "p2_no_checkpoint_users": 3,
+        "seat_count": 51,
+        "unresolved": 3,
+        "unresolved_rate_eligible": 0.0029469548133595285
+      }
+    }
+  },
+  "population": {
+    "compat_keys": 932,
+    "n_events": 294426,
+    "n_users": 1021
+  },
+  "protocol": {
+    "c_dev_source": "development_split_only",
+    "confirmatory_role": "evaluate_certificates_only",
+    "invariant": "confirmatory AnswerValue never enters C_dev construction",
+    "kappa": 0.05,
+    "tau": 0.8
+  },
+  "runtime_s": 129.3679518699646
+}

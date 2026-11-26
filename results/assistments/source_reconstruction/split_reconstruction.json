@@ -1,0 +1,41 @@
+{
+  "status": "EXACT_MATCH",
+  "approved_reconstruction": true,
+  "seed": "wdlf-r7-assistments-2012-CONFIRMATORY-v2-TO_FREEZE",
+  "minimum_user_events": 3,
+  "expected": {
+    "development": {
+      "users": 31753,
+      "events": 4286981
+    },
+    "calibration": {
+      "users": 6804,
+      "events": 888158
+    },
+    "confirmatory": {
+      "users": 6766,
+      "events": 939910
+    }
+  },
+  "expected_users": 45323,
+  "expected_events": 6115049,
+  "observed_users": {
+    "development": 31753,
+    "confirmatory": 6766,
+    "calibration": 6804
+  },
+  "observed_events": {
+    "development": 4286981,
+    "confirmatory": 939910,
+    "calibration": 888158
+  },
+  "observed_user_total": 45323,
+  "observed_event_total": 6115049,
+  "pre_min_users": 46667,
+  "pre_min_events": 6117045,
+  "removed_users": 1344,
+  "removed_events": 1996,
+  "split_conflicts": 0,
+  "user_assignment_is_a_function": true,
+  "event_order": "CSV order preserved; no temporal sort"
+}

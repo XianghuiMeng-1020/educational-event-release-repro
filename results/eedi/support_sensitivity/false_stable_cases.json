@@ -1,0 +1,14 @@
+[
+  {
+    "rule_id": "S_u2_p1",
+    "model": "CategoricalDKT",
+    "tau": 0.7,
+    "question_id": 1,
+    "is_correct": 0,
+    "n_options": 1,
+    "n_dev_users": 2,
+    "min_users_per_option": 2,
+    "answer_key": 0,
+    "realized_in_class": 0
+  }
+]

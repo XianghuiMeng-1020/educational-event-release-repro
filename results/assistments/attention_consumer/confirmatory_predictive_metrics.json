@@ -1,0 +1,14 @@
+{
+  "model": "CausalTokenAttentionKT",
+  "seed": 17,
+  "n": 939819,
+  "n_learners": 6766,
+  "base_rate": 0.6790552223353645,
+  "auroc": 0.9762063038561295,
+  "log_loss": 0.14851188712237753,
+  "brier": 0.04177396451685693,
+  "accuracy_at_0.5": 0.9432518389179193,
+  "mean_prediction": 0.6750535798659438,
+  "nonfinite": 0,
+  "estimand": "action-conditioned current-event correctness under the chronological token contract"
+}

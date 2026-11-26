@@ -1,0 +1,20 @@
+{
+  "events": 4286981,
+  "key_counts": {
+    "S0": 259838,
+    "S1": 511770,
+    "S2": 523378,
+    "S3": 605097
+  },
+  "duplicate_rich_signatures": 0,
+  "unique_rich_signatures": 4286981,
+  "projection_violations": 0,
+  "fingerprint_nesting": {
+    "s3_keys_checked": 605097,
+    "violations": {}
+  },
+  "invalid_development_events_retained": 475,
+  "support_predicate": "(n_users >= 2) OR (n_rich_signatures >= 2)",
+  "n_skills": 264,
+  "n_action_types": 8
+}

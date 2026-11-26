@@ -1,0 +1,5 @@
+analysis,model,schema,kappa,tie_rule,n_full,n_eligible,n_no_checkpoint,B,guaranteed_in,guaranteed_out,unresolved,all_user_capacity_nc
+matched_event,CausalTokenAttentionKT,S0,0.05,adversarial,6766,6744,22,337,0,5264,1480,0.2219923145137452
+matched_event,CausalTokenAttentionKT,S1,0.05,adversarial,6766,6744,22,337,202,6239,303,0.04803428909252143
+matched_event,CausalTokenAttentionKT,S2,0.05,adversarial,6766,6744,22,337,224,6271,249,0.040053207212533255
+matched_event,CausalTokenAttentionKT,S3,0.05,adversarial,6766,6744,22,337,337,6407,0,0.00325155187703222

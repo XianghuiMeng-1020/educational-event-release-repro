@@ -1,0 +1,5 @@
+schema,development_keys,development_events,keys_with_multiple_skill_ids,development_events_in_multi_skill_keys,keys_with_one_skill,max_skill_count_observed_cap,skill_count_is_exact,valid_confirmatory_events_referencing_multi_skill_keys,confirmatory_skill_disagreements_against_unique_development_skill,p17_p21_mask_disagreements_from_adding_skill
+S0,259838,4286981,0,0,259838,1,True,0,0,0
+S1,511770,4286981,0,0,511770,1,True,0,0,0
+S2,523378,4286981,0,0,523378,1,True,0,0,0
+S3,605097,4286981,0,0,605097,1,True,0,0,0

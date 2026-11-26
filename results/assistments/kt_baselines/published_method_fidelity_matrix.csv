@@ -1,0 +1,5 @@
+model,family,faithful_mechanism,adaptation,completed
+BKT-40,Bayesian Knowledge Tracing,True,40-interaction window; skill ids; guess and slip bounded by 0.5,True
+DKT,Deep Knowledge Tracing,True,hidden 200; one-hot past interactions; current skill selects the output; window 40,True
+SAKT-KC,Self-Attentive Knowledge Tracing,True,concept query rather than exercise id; d_model 64; window 40,True
+AKT-NonRasch,AKT concept-ID,True,official monotonic attention and n_pid=-1; per-target window 40; Adam lr 1e-4; no CUDA script executed,True

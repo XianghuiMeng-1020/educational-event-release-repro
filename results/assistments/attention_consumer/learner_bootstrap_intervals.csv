@@ -1,0 +1,9 @@
+analysis,schema,point,ci95_low,ci95_high,replicates,seed_rng,estimand
+event_nc_rate,S0,0.18777764654683507,0.18209174472153714,0.19394865443616516,2000,20311,learner resampling conditional on the single attention checkpoint
+event_nc_rate,S1,0.1402078485325366,0.13601992379928185,0.14499485705184126,2000,20311,learner resampling conditional on the single attention checkpoint
+event_nc_rate,S2,0.1429711465718399,0.1386954761069276,0.1477738735242679,2000,20311,learner resampling conditional on the single attention checkpoint
+event_nc_rate,S3,0.1071355229038783,0.10265041127124945,0.11199871376054821,2000,20311,learner resampling conditional on the single attention checkpoint
+event_nc_s1_minus_s0,S1-S0,-0.047569798014298476,-0.05115683565117939,-0.043975538203131305,2000,20311,learner resampling conditional on the single attention checkpoint
+auroc,predictive,0.9762063038561295,0.974887808467608,0.9776247941024383,2000,20311,learner resampling conditional on the single attention checkpoint
+auroc_attention_minus_act_primary,seed_29,-0.004049325575367302,-0.004338224813765878,-0.0037648776111723625,2000,20311,learner resampling conditional on these two checkpoints; seed 17 GRU event scores were not retained
+auroc_attention_minus_act_primary,seed_41,-0.00296791817599229,-0.003259900844307842,-0.00268725472461806,2000,20311,learner resampling conditional on these two checkpoints; seed 17 GRU event scores were not retained

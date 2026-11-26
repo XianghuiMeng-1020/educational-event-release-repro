@@ -1,0 +1,4 @@
+contrast,n,auroc_difference,log_loss_difference,brier_difference,auroc_sign_convention,loss_sign_convention
+LEN_minus_HIST,939819,0.2968608174516083,-0.4056293070793824,-0.14917124674225507,positive favors the first named condition,negative favors the first named condition
+ACT_minus_LEN,939819,0.006155006135833085,-0.03752055045716721,-0.009944628295719814,positive favors the first named condition,negative favors the first named condition
+ACT_minus_HIST,939819,0.3030158235874414,-0.44314985753654956,-0.15911587503797486,positive favors the first named condition,negative favors the first named condition

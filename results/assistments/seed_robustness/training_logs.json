@@ -1,0 +1,208 @@
+{
+  "models": [
+    {
+      "seed": 29,
+      "contract": "HIST",
+      "initial_parameter_sha256": "cedf678288e33b974b4df4d005e79becd892bdaa6b9c5e5dcd7e692b51a6ce9a",
+      "training_selection_sha256": "cbe4fd9e0075c78ae5997892153d37920497d14c64a21af3ffbf3594e5c907e2",
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "loss_by_epoch": [
+        0.5895356944031346,
+        0.5865425182277579
+      ],
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 2,
+      "loss_name": "binary_cross_entropy",
+      "warm_start": false,
+      "parameter_count": 33857,
+      "deterministic_repeat_abs_diff": 0.0,
+      "checkpoint": "results/assistments/seed_robustness/hist_seed29.pt",
+      "interruptions": "none",
+      "checkpoint_sha256": "24ea0a219e8749628cc34c9590d328e7bc058a79fa7fb7c6eb24ccb1a6bc1d2f",
+      "checkpoint_bytes": 138533
+    },
+    {
+      "seed": 29,
+      "contract": "LEN",
+      "initial_parameter_sha256": "cedf678288e33b974b4df4d005e79becd892bdaa6b9c5e5dcd7e692b51a6ce9a",
+      "training_selection_sha256": "cbe4fd9e0075c78ae5997892153d37920497d14c64a21af3ffbf3594e5c907e2",
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "loss_by_epoch": [
+        0.20539599111922435,
+        0.19714073431367
+      ],
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 2,
+      "loss_name": "binary_cross_entropy",
+      "warm_start": false,
+      "parameter_count": 33857,
+      "deterministic_repeat_abs_diff": 0.0,
+      "checkpoint": "results/assistments/seed_robustness/len_seed29.pt",
+      "interruptions": "none",
+      "checkpoint_sha256": "2ea5f4ab267b3aa236e424a90c69db3def8e92722b5fa34964c870ab36a0b22d",
+      "checkpoint_bytes": 138531
+    },
+    {
+      "seed": 29,
+      "contract": "ACT_MATCHED",
+      "initial_parameter_sha256": "cedf678288e33b974b4df4d005e79becd892bdaa6b9c5e5dcd7e692b51a6ce9a",
+      "training_selection_sha256": "cbe4fd9e0075c78ae5997892153d37920497d14c64a21af3ffbf3594e5c907e2",
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "loss_by_epoch": [
+        0.157007092270832,
+        0.15485986612212455
+      ],
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 2,
+      "loss_name": "binary_cross_entropy",
+      "warm_start": false,
+      "parameter_count": 33857,
+      "deterministic_repeat_abs_diff": 0.0,
+      "checkpoint": "results/assistments/seed_robustness/act_matched_seed29.pt",
+      "interruptions": "none",
+      "checkpoint_sha256": "ddbb34f5f3b51c2b81991c2190286712cb78b3daf8c03a893a67dc975f11b4bd",
+      "checkpoint_bytes": 138547
+    },
+    {
+      "seed": 29,
+      "contract": "ACT_PRIMARY",
+      "initial_parameter_sha256": "cedf678288e33b974b4df4d005e79becd892bdaa6b9c5e5dcd7e692b51a6ce9a",
+      "training_selection_sha256": "cbe4fd9e0075c78ae5997892153d37920497d14c64a21af3ffbf3594e5c907e2",
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "loss_by_epoch": [
+        0.15645714121690282,
+        0.15312841357970197
+      ],
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 2,
+      "loss_name": "binary_cross_entropy",
+      "warm_start": false,
+      "parameter_count": 33857,
+      "deterministic_repeat_abs_diff": 0.0,
+      "checkpoint": "results/assistments/seed_robustness/act_primary_seed29.pt",
+      "interruptions": "none",
+      "checkpoint_sha256": "9f56be4ab82b4357d6f530cec2803ff85de8533f1237a07c14e7688dd92aa75e",
+      "checkpoint_bytes": 138542
+    },
+    {
+      "seed": 41,
+      "contract": "HIST",
+      "initial_parameter_sha256": "f8935ca8e03b650e855c13f16dc64ef13835bfbe0ab3a1bdaf39e972f1bd9f02",
+      "training_selection_sha256": "cbe4fd9e0075c78ae5997892153d37920497d14c64a21af3ffbf3594e5c907e2",
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "loss_by_epoch": [
+        0.5902718850867459,
+        0.5866360377246441
+      ],
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 2,
+      "loss_name": "binary_cross_entropy",
+      "warm_start": false,
+      "parameter_count": 33857,
+      "deterministic_repeat_abs_diff": 0.0,
+      "checkpoint": "results/assistments/seed_robustness/hist_seed41.pt",
+      "interruptions": "none",
+      "checkpoint_sha256": "97fccff66601c0f01b50eafc5fda34b6b40b6e2063a9fcfa0a3288761ed0ac14",
+      "checkpoint_bytes": 138533
+    },
+    {
+      "seed": 41,
+      "contract": "LEN",
+      "initial_parameter_sha256": "f8935ca8e03b650e855c13f16dc64ef13835bfbe0ab3a1bdaf39e972f1bd9f02",
+      "training_selection_sha256": "cbe4fd9e0075c78ae5997892153d37920497d14c64a21af3ffbf3594e5c907e2",
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "loss_by_epoch": [
+        0.20421444442948258,
+        0.19731332532755144
+      ],
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 2,
+      "loss_name": "binary_cross_entropy",
+      "warm_start": false,
+      "parameter_count": 33857,
+      "deterministic_repeat_abs_diff": 0.0,
+      "checkpoint": "results/assistments/seed_robustness/len_seed41.pt",
+      "interruptions": "none",
+      "checkpoint_sha256": "f1da7ac551c8306ff989a3de1fa57c176317b079775ba88ae200b1f8830ae9e1",
+      "checkpoint_bytes": 138531
+    },
+    {
+      "seed": 41,
+      "contract": "ACT_MATCHED",
+      "initial_parameter_sha256": "f8935ca8e03b650e855c13f16dc64ef13835bfbe0ab3a1bdaf39e972f1bd9f02",
+      "training_selection_sha256": "cbe4fd9e0075c78ae5997892153d37920497d14c64a21af3ffbf3594e5c907e2",
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "loss_by_epoch": [
+        0.15842589922940514,
+        0.15580975260863816
+      ],
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 2,
+      "loss_name": "binary_cross_entropy",
+      "warm_start": false,
+      "parameter_count": 33857,
+      "deterministic_repeat_abs_diff": 0.0,
+      "checkpoint": "results/assistments/seed_robustness/act_matched_seed41.pt",
+      "interruptions": "none",
+      "checkpoint_sha256": "c26c0c421048171455edd45f6bbcdeadecc8d804c70339fa8201f6773867b68a",
+      "checkpoint_bytes": 138547
+    },
+    {
+      "seed": 41,
+      "contract": "ACT_PRIMARY",
+      "initial_parameter_sha256": "f8935ca8e03b650e855c13f16dc64ef13835bfbe0ab3a1bdaf39e972f1bd9f02",
+      "training_selection_sha256": "cbe4fd9e0075c78ae5997892153d37920497d14c64a21af3ffbf3594e5c907e2",
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "loss_by_epoch": [
+        0.15838585258175072,
+        0.1545108107914469
+      ],
+      "optimizer": "Adam",
+      "learning_rate": 0.001,
+      "epochs": 2,
+      "loss_name": "binary_cross_entropy",
+      "warm_start": false,
+      "parameter_count": 33857,
+      "deterministic_repeat_abs_diff": 0.0,
+      "checkpoint": "results/assistments/seed_robustness/act_primary_seed41.pt",
+      "interruptions": "none",
+      "checkpoint_sha256": "36a7c4b91f6c5bf5f771118943748824952a829fc33aac9a46154cd657da8027",
+      "checkpoint_bytes": 138542
+    }
+  ],
+  "initial_hashes": {
+    "29": "cedf678288e33b974b4df4d005e79becd892bdaa6b9c5e5dcd7e692b51a6ce9a",
+    "41": "f8935ca8e03b650e855c13f16dc64ef13835bfbe0ab3a1bdaf39e972f1bd9f02"
+  }
+}

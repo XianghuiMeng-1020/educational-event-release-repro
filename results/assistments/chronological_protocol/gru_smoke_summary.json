@@ -1,0 +1,52 @@
+{
+  "label": "NON_PRIMARY_CHRONOLOGICAL_TRAINING_SMOKE_TEST",
+  "not_confirmatory_evidence": true,
+  "events_requested": 2000,
+  "events_available": 16881,
+  "events_with_a_score": 2000,
+  "candidate_budget": 100000,
+  "candidate_cost_by_schema": {
+    "S3": 1809,
+    "S2": 2778,
+    "S1": 2951,
+    "S0": 14556
+  },
+  "schemas_executed": [
+    "S3",
+    "S2",
+    "S1",
+    "S0"
+  ],
+  "schemas_not_executed": [],
+  "smoke_log_loss": 0.10171442629706957,
+  "smoke_threshold_0_5_accuracy": 0.966,
+  "interpretation": "These predictive numbers come from a 128-user, one-epoch pilot. They do not support or refute the study's model comparison.",
+  "counts": {
+    "events_scored": 2000,
+    "eligible_valid_events_in_128_users": 16881,
+    "S0_stable": 1773,
+    "S0_set_valued": 191,
+    "S0_unsupported": 36,
+    "S0_false_stable": 0,
+    "S0_realized_action_contained": 1964,
+    "S1_stable": 1827,
+    "S1_set_valued": 20,
+    "S1_unsupported": 153,
+    "S1_false_stable": 0,
+    "S1_realized_action_contained": 1847,
+    "S2_stable": 1818,
+    "S2_set_valued": 20,
+    "S2_unsupported": 162,
+    "S2_false_stable": 0,
+    "S2_realized_action_contained": 1838,
+    "S3_stable": 1809,
+    "S3_set_valued": 0,
+    "S3_unsupported": 191,
+    "S3_false_stable": 0,
+    "S3_realized_action_contained": 1809
+  },
+  "training": {
+    "parameter_count": 33857,
+    "examples": 16332
+  }
+}

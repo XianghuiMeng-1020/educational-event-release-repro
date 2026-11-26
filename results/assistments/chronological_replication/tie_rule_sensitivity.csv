@@ -1,0 +1,9 @@
+model,schema,kappa,n_eligible,adversarial_guaranteed_in,userid_guaranteed_in,membership_changes,adversarial_in_retained_under_userid,adversarial_out_retained_under_userid
+TransparentActionPFA,S0,0.05,6754,0,110,110,True,True
+TransparentActionPFA,S1,0.05,6749,326,326,0,True,True
+TransparentActionPFA,S2,0.05,6746,336,336,0,True,True
+TransparentActionPFA,S3,0.05,6744,337,337,0,True,True
+ActionTokenGRU,S0,0.05,6754,3,3,0,True,True
+ActionTokenGRU,S1,0.05,6749,157,157,0,True,True
+ActionTokenGRU,S2,0.05,6746,198,198,0,True,True
+ActionTokenGRU,S3,0.05,6744,337,337,0,True,True

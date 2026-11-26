@@ -1,0 +1,107 @@
+{
+  "calibration_users": 6804,
+  "users_with_valid_events": 6804,
+  "users_without_valid_events": 0,
+  "levels": {
+    "0.05": {
+      "TransparentActionPFA|S0": {
+        "n": 6804,
+        "k": 6465,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      },
+      "TransparentActionPFA|S1": {
+        "n": 6804,
+        "k": 6465,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      },
+      "TransparentActionPFA|S2": {
+        "n": 6804,
+        "k": 6465,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      },
+      "TransparentActionPFA|S3": {
+        "n": 6804,
+        "k": 6465,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      },
+      "ActionTokenGRU|S0": {
+        "n": 6804,
+        "k": 6465,
+        "quantile": 0.9411764740943909,
+        "k_exceeds_n": false
+      },
+      "ActionTokenGRU|S1": {
+        "n": 6804,
+        "k": 6465,
+        "quantile": 0.7857142835855484,
+        "k_exceeds_n": false
+      },
+      "ActionTokenGRU|S2": {
+        "n": 6804,
+        "k": 6465,
+        "quantile": 0.7876712083816528,
+        "k_exceeds_n": false
+      },
+      "ActionTokenGRU|S3": {
+        "n": 6804,
+        "k": 6465,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      }
+    },
+    "0.1": {
+      "TransparentActionPFA|S0": {
+        "n": 6804,
+        "k": 6125,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      },
+      "TransparentActionPFA|S1": {
+        "n": 6804,
+        "k": 6125,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      },
+      "TransparentActionPFA|S2": {
+        "n": 6804,
+        "k": 6125,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      },
+      "TransparentActionPFA|S3": {
+        "n": 6804,
+        "k": 6125,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      },
+      "ActionTokenGRU|S0": {
+        "n": 6804,
+        "k": 6125,
+        "quantile": 0.8839285746216774,
+        "k_exceeds_n": false
+      },
+      "ActionTokenGRU|S1": {
+        "n": 6804,
+        "k": 6125,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      },
+      "ActionTokenGRU|S2": {
+        "n": 6804,
+        "k": 6125,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      },
+      "ActionTokenGRU|S3": {
+        "n": 6804,
+        "k": 6125,
+        "quantile": 0.5,
+        "k_exceeds_n": false
+      }
+    }
+  }
+}

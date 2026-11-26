@@ -1,0 +1,9 @@
+analysis,model,schema,kappa,n,inside,outside,false_guaranteed_in,false_guaranteed_out
+completion_time_native,CausalTokenAttentionKT,S0,0.05,6754,6593,161,0,4
+completion_time_native,CausalTokenAttentionKT,S1,0.05,6749,6638,111,2,1
+completion_time_native,CausalTokenAttentionKT,S2,0.05,6746,6653,93,2,2
+completion_time_native,CausalTokenAttentionKT,S3,0.05,6744,6744,0,0,0
+matched_event,CausalTokenAttentionKT,S0,0.05,6744,6744,0,0,0
+matched_event,CausalTokenAttentionKT,S1,0.05,6744,6744,0,0,0
+matched_event,CausalTokenAttentionKT,S2,0.05,6744,6744,0,0,0
+matched_event,CausalTokenAttentionKT,S3,0.05,6744,6744,0,0,0

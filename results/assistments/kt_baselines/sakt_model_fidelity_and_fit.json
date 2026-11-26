@@ -1,0 +1,29 @@
+{
+  "status": "fit",
+  "path": "sakt_kc_seed17.pt",
+  "sha256": "45a151f7007ab3c27af8ca25bef5770d72478587010dc3d413c576ae5ef0957a",
+  "history": [
+    {
+      "epoch": 1,
+      "train_bce": 0.5955533018195652,
+      "calibration_log_loss": 0.5716449970341364
+    },
+    {
+      "epoch": 2,
+      "train_bce": 0.5836683913203202,
+      "calibration_log_loss": 0.5681919537230627
+    },
+    {
+      "epoch": 3,
+      "train_bce": 0.5789022850995014,
+      "calibration_log_loss": 0.5789740003376703
+    }
+  ],
+  "best_calibration_log_loss": 0.5681919537230627,
+  "reload_max_abs": 0.0,
+  "parameters": 87233,
+  "probe_lengths": [
+    40,
+    40
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "pairs": 53264,
+  "expanded_lower": 0,
+  "expanded_upper": 0,
+  "max_lower_deficit": 0.0,
+  "max_upper_excess": 0.0,
+  "by_cell": [
+    {
+      "consumer": "TransparentActionPFA",
+      "schema": "S0",
+      "events": 6658,
+      "contained": 6658,
+      "max_lower_deficit": 0.0,
+      "max_upper_excess": 0.0
+    },
+    {
+      "consumer": "TransparentActionPFA",
+      "schema": "S1",
+      "events": 6658,
+      "contained": 6658,
+      "max_lower_deficit": 0.0,
+      "max_upper_excess": 0.0
+    },
+    {
+      "consumer": "TransparentActionPFA",
+      "schema": "S2",
+      "events": 6658,
+      "contained": 6658,
+      "max_lower_deficit": 0.0,
+      "max_upper_excess": 0.0
+    },
+    {
+      "consumer": "TransparentActionPFA",
+      "schema": "S3",
+      "events": 6658,
+      "contained": 6658,
+      "max_lower_deficit": 0.0,
+      "max_upper_excess": 0.0
+    },
+    {
+      "consumer": "ActionTokenGRU",
+      "schema": "S0",
+      "events": 6658,
+      "contained": 6658,
+      "max_lower_deficit": 0.0,
+      "max_upper_excess": 0.0
+    },
+    {
+      "consumer": "ActionTokenGRU",
+      "schema": "S1",
+      "events": 6658,
+      "contained": 6658,
+      "max_lower_deficit": 0.0,
+      "max_upper_excess": 0.0
+    },
+    {
+      "consumer": "ActionTokenGRU",
+      "schema": "S2",
+      "events": 6658,
+      "contained": 6658,
+      "max_lower_deficit": 0.0,
+      "max_upper_excess": 0.0
+    },
+    {
+      "consumer": "ActionTokenGRU",
+      "schema": "S3",
+      "events": 6658,
+      "contained": 6658,
+      "max_lower_deficit": 0.0,
+      "max_upper_excess": 0.0
+    }
+  ],
+  "consumer_support_masks_equal": true
+}

@@ -1,0 +1,29 @@
+{
+  "status": "fit",
+  "path": "dkt_seed17.pt",
+  "sha256": "127d0ceeae22f197f7dcb02c40acc669338bd3d87ac62381dbd428ab1b9c4dc9",
+  "history": [
+    {
+      "epoch": 1,
+      "train_bce": 0.5859747704974505,
+      "calibration_log_loss": 0.5662275061345237
+    },
+    {
+      "epoch": 2,
+      "train_bce": 0.5722857613884205,
+      "calibration_log_loss": 0.5618483761649363
+    },
+    {
+      "epoch": 3,
+      "train_bce": 0.5658643347674929,
+      "calibration_log_loss": 0.5668972211599317
+    }
+  ],
+  "best_calibration_log_loss": 0.5618483761649363,
+  "reload_max_abs": 0.0,
+  "parameters": 638865,
+  "probe_lengths": [
+    40,
+    40
+  ]
+}

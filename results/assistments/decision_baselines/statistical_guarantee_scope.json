@@ -1,0 +1,7 @@
+{
+  "modal": "A single development-observed fingerprint. It is not a certificate over the compatibility class.",
+  "selective": "A threshold chosen from clustered calibration resampling. It is not the original Geifman-El-Yaniv finite-sample guarantee.",
+  "conformal": "A learner-maximum split-conformal set under exchangeable learner trajectories and a calibration-independent score. It is not event-level exchangeability and not conditional support-stratum coverage.",
+  "empirical_certificate": "Agreement over represented development completions when the support rule holds. It is not a statistical coverage guarantee.",
+  "capacity": "These baselines do not produce guaranteed-in or guaranteed-out capacity intervals."
+}

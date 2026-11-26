@@ -1,0 +1,9 @@
+analysis,schema,kappa,n_eligible,membership_changes_vs_userid
+completion_time_native,S0,0.05,6754,0
+completion_time_native,S1,0.05,6749,0
+completion_time_native,S2,0.05,6746,0
+completion_time_native,S3,0.05,6744,0
+matched_event,S0,0.05,6744,0
+matched_event,S1,0.05,6744,0
+matched_event,S2,0.05,6744,0
+matched_event,S3,0.05,6744,0

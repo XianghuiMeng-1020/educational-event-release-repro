@@ -1,0 +1,5 @@
+release,keys,supported_keys_event_predicate,supported_keys_rich_predicate,predicate_disagreements,development_events,unique_rich_signatures_global,duplicate_rich_signatures,pfa_fingerprint_occurrences,gru_fingerprint_occurrences
+R00,259838,194499,194499,0,4286981,4286981,0,603748,603141
+R10,327169,227301,227301,0,4286981,4286981,0,603748,603142
+R01,422630,260073,260073,0,4286981,4286981,0,603748,603747
+R11,511770,278443,278443,0,4286981,4286981,0,603748,603748

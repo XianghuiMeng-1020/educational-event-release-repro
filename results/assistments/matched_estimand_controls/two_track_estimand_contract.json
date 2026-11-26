@@ -1,0 +1,43 @@
+{
+  "track_a_information": "(skill, successes on that skill among the last 40 completed events, failures on that skill)",
+  "track_a_excludes": [
+    "current actions",
+    "current outcome",
+    "historical action streams",
+    "other skills",
+    "original outcome order"
+  ],
+  "track_a_pfa": {
+    "name": "CanonicalPFA40",
+    "formula": "logit = beta_skill + gamma_success_skill * S + gamma_failure_skill * F",
+    "C": 1.0,
+    "l2": true,
+    "tol": 1e-06,
+    "max_iter": 500,
+    "solver": "liblinear",
+    "fit_intercept": false,
+    "solver_note": "Same sklearn L2 logistic objective. liblinear is the frozen solver because lbfgs overflowed and reached the 500-iteration limit on the raw counts before any confirmatory score was examined."
+  },
+  "track_a_gru": {
+    "name": "CountEncodedGRU",
+    "encoding": "F failure tokens, then S success tokens, then one start token, all carrying the target skill",
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "epochs": 2,
+    "updates": "one Adam step per training occurrence, in cohort order, no shuffle",
+    "seed": 17,
+    "warm_start": false
+  },
+  "track_b_information": "exact chronological _tokens(prefix, current, include_current_outcome=False)",
+  "track_b_logit": {
+    "name": "ActionTokenLogit",
+    "feature": "(token_position, skill_id, action_or_outcome_id)",
+    "C": 1.0,
+    "tol": 0.0001,
+    "max_iter": 500,
+    "solver": "liblinear",
+    "seed": 17
+  },
+  "not_the_post_ingest_pfa": true,
+  "frozen_before_confirmatory_scoring": true
+}

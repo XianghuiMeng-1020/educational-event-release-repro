@@ -1,0 +1,18 @@
+{
+  "bundle_path": "prospective\\wdlf_r7\\sealed\\confirmatory_sealed_bundle.json",
+  "bundle_sha256": "a290b8bd67e7b556fdef1b45217c05b2877310e9a1d7467b0e288cd5f607553a",
+  "checkpoint_sha256": "acd9b0c1650c13ad0739506db1d861e86e77f4be98f48c6c01f60520252dace2",
+  "runtime_s": 6581.924823284149,
+  "conf_users": 6766,
+  "conf_events": 939910,
+  "schemas": [
+    "S0",
+    "S1",
+    "S2",
+    "S3"
+  ],
+  "models": [
+    "transparent",
+    "neural"
+  ]
+}

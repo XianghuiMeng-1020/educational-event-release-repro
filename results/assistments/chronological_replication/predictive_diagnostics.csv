@@ -1,0 +1,4 @@
+estimand,n,positive_rate,roc_auc,log_loss,brier
+ActionTokenGRU action-conditioned current-event correctness; history is H(e); current actions included; current outcome token withheld,939819,0.6790552223353645,0.9790957170706067,0.14057331103244414,0.04024579151215777
+TransparentActionPFA pre-update mastery using only historical success and failure counts; empty completed histories withheld,932721,0.6791559319453513,0.6685061876324851,0.5973114942636272,0.20525251902588354
+"TransparentActionPFA pre-update mastery using historical success, failure, hint, and attempt counts; empty completed histories withheld",932721,0.6791559319453513,0.6684520510462649,0.6244346475726099,0.21313081597564248

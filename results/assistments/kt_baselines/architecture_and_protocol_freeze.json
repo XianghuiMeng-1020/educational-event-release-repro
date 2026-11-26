@@ -1,0 +1,56 @@
+{
+  "frozen_before_confirmatory_scores": true,
+  "task": "P(current correctness | last 40 completed interactions, current skill)",
+  "excluded_inputs": [
+    "current correctness",
+    "current actions",
+    "current hints",
+    "current attempts",
+    "future outcomes",
+    "student id embedding"
+  ],
+  "neural": {
+    "seed": 17,
+    "optimizer": "Adam",
+    "batch_size": 32,
+    "max_epochs": 3,
+    "early_stop": "calibration log loss, patience 1",
+    "calibration_users": 128,
+    "calibration_selection": "WSDM203-G7-CAL-PILOT-v1"
+  },
+  "dkt": {
+    "hidden": 200,
+    "input": "one-hot of past skill-response",
+    "lr": 0.001
+  },
+  "sakt_kc": {
+    "d_model": 64,
+    "heads": 4,
+    "d_ff": 128,
+    "dropout": 0.2,
+    "query": "current skill",
+    "lr": 0.001
+  },
+  "akt_nonrasch": {
+    "source_commit": "01b7e8d7d7c862cabc9467108e3e7f2555653a88",
+    "n_pid": -1,
+    "d_model": 256,
+    "d_ff": 2048,
+    "heads": 8,
+    "blocks": 1,
+    "dropout": 0.05,
+    "lr": 0.0001
+  },
+  "bkt40": {
+    "parameters": [
+      "prior",
+      "learn",
+      "guess",
+      "slip"
+    ],
+    "forgetting": 0,
+    "guess_slip_max": 0.5,
+    "skill_minimum": 30,
+    "objective": "Bernoulli NLL of pre-update BKT-40 probabilities on the chronological target multiset"
+  }
+}

@@ -1,0 +1,12 @@
+contrast,metric,n_seeds,mean,minimum,maximum,sample_standard_deviation,interval_type
+ACT_MATCHED_minus_HIST,auroc_difference,3,0.3008351851268911,0.2982868263896834,0.3030158235874414,0.0023858472867095,"three-seed descriptive range, not a 95 percent confidence interval"
+ACT_MATCHED_minus_HIST,log_loss_difference,3,-0.4420774309015532,-0.4431498575365495,-0.4405306931476765,0.0013724918222362,"three-seed descriptive range, not a 95 percent confidence interval"
+ACT_MATCHED_minus_HIST,brier_difference,3,-0.1581711096883242,-0.1591158750379749,-0.1570954381543186,0.0010165596991994,"three-seed descriptive range, not a 95 percent confidence interval"
+ACT_MATCHED_minus_LEN,auroc_difference,3,0.0083095936786055,0.0061550061358331,0.0097311356064659,0.0018974172980233,"three-seed descriptive range, not a 95 percent confidence interval"
+ACT_MATCHED_minus_LEN,log_loss_difference,3,-0.0427592314786145,-0.0459344436675162,-0.0375205504571672,0.0045707578645072,"three-seed descriptive range, not a 95 percent confidence interval"
+ACT_MATCHED_minus_LEN,brier_difference,3,-0.0108659912501601,-0.0117823782440028,-0.0099446282957198,0.0009188850789089,"three-seed descriptive range, not a 95 percent confidence interval"
+LEN_minus_HIST,auroc_difference,3,0.2925255914482855,0.2892441870961658,0.2968608174516082,0.0039161421765903,"three-seed descriptive range, not a 95 percent confidence interval"
+LEN_minus_HIST,log_loss_difference,3,-0.3993181994229386,-0.4056293070793824,-0.3957079928365162,0.0054844570395761,"three-seed descriptive range, not a 95 percent confidence interval"
+LEN_minus_HIST,brier_difference,3,-0.147305118438164,-0.1491712467422551,-0.1462244709435607,0.0016228391720986,"three-seed descriptive range, not a 95 percent confidence interval"
+ACT_PRIMARY_auroc,value,3,0.9795085228447418,0.9790957170706068,0.9802556294314968,0.0006482028588529513,"three-seed descriptive range, not a 95 percent confidence interval"
+ACT_PRIMARY_event_nc_s1_minus_s0,value,3,-0.04184883826921281,-0.04809862324553983,-0.03851379893362439,0.005416550644573062,"three-seed descriptive range, not a 95 percent confidence interval"

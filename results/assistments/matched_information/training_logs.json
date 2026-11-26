@@ -1,0 +1,64 @@
+{
+  "models": [
+    {
+      "arm": "HIST",
+      "checkpoint": "results/assistments/matched_information/gru_hist_seed17.pt",
+      "checkpoint_sha256": "7815232ef52b7aca7214a3eb6a9dc32f68b81575731fe91a5ac40af36b1ce6bc",
+      "checkpoint_bytes": 142221,
+      "parameter_count": 33857,
+      "loss_by_epoch": [
+        0.5906874687283609,
+        0.5875864337949684
+      ],
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "empty_inputs_skipped_by_epoch": [
+        0,
+        0
+      ],
+      "warm_started_from_chronorep": false
+    },
+    {
+      "arm": "LEN",
+      "checkpoint": "results/assistments/matched_information/gru_length_seed17.pt",
+      "checkpoint_sha256": "88d620d16ab22d8a6f61f8f09547b35ab8d3d9ca78cb7071f5bca9fe3bdf46ec",
+      "checkpoint_bytes": 142221,
+      "parameter_count": 33857,
+      "loss_by_epoch": [
+        0.2028127016021363,
+        0.19542549041609703
+      ],
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "empty_inputs_skipped_by_epoch": [
+        0,
+        0
+      ],
+      "warm_started_from_chronorep": false
+    },
+    {
+      "arm": "ACT",
+      "checkpoint": "results/assistments/matched_information/gru_action_seed17_matched.pt",
+      "checkpoint_sha256": "8cc717595eb03df5561cd016f73eade0f548c4707cd7e59e8f0ec593fbca4ed2",
+      "checkpoint_bytes": 142221,
+      "parameter_count": 33857,
+      "loss_by_epoch": [
+        0.1585146229480387,
+        0.15544853135740022
+      ],
+      "examples_by_epoch": [
+        90950,
+        90942
+      ],
+      "empty_inputs_skipped_by_epoch": [
+        0,
+        0
+      ],
+      "warm_started_from_chronorep": false
+    }
+  ]
+}

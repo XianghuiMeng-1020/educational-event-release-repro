@@ -1,0 +1,13 @@
+analysis,model,schema,kappa,tie_rule,n_full,n_eligible,n_no_checkpoint,B,guaranteed_in,guaranteed_out,unresolved,all_user_capacity_nc
+completion_time_native,TransparentActionPFA,R00,0.050000000000000003,adversarial,6766,6754,12,338,0,6060,694,0.10434525569021579
+completion_time_native,TransparentActionPFA,R10,0.050000000000000003,adversarial,6766,6753,13,338,0,6182,571,0.086313922553946196
+completion_time_native,TransparentActionPFA,R01,0.050000000000000003,adversarial,6766,6751,15,338,233,6298,220,0.034732485959207804
+completion_time_native,TransparentActionPFA,R11,0.050000000000000003,adversarial,6766,6749,17,337,326,6404,19,0.0053207212533254505
+completion_time_native,ActionTokenGRU,R00,0.050000000000000003,adversarial,6766,6754,12,338,3,4997,1754,0.26101093703813183
+completion_time_native,ActionTokenGRU,R10,0.050000000000000003,adversarial,6766,6753,13,338,55,5587,1111,0.16612474135382796
+completion_time_native,ActionTokenGRU,R01,0.050000000000000003,adversarial,6766,6751,15,338,58,5700,993,0.14898019509311261
+completion_time_native,ActionTokenGRU,R11,0.050000000000000003,adversarial,6766,6749,17,337,157,6150,442,0.0678391959798995
+completion_time_native,CausalTokenAttentionKT,R00,0.050000000000000003,adversarial,6766,6754,12,338,0,4996,1758,0.26160212828850132
+completion_time_native,CausalTokenAttentionKT,R10,0.050000000000000003,adversarial,6766,6753,13,338,1,5269,1483,0.22110552763819097
+completion_time_native,CausalTokenAttentionKT,R01,0.050000000000000003,adversarial,6766,6751,15,338,56,5803,892,0.13405261602128288
+completion_time_native,CausalTokenAttentionKT,R11,0.050000000000000003,adversarial,6766,6749,17,337,189,6233,327,0.050842447531776531

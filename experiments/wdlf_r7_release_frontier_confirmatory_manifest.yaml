@@ -1,0 +1,113 @@
+# WDLF R7 confirmatory manifest V2 — NOT RUN
+# Authorized only after R6F gates G0–G11 PASS (dev/cal hardening).
+# Do not execute in R6F.
+
+name: wdlf_r7_assistments_release_frontier_confirmatory
+version: "2.0.0"
+status: AUTHORIZED_PRE_OUTCOME
+data:
+  platform: assistments_2012_13
+  source_zip: data/raw/assistments/assistments_2012.zip
+  source_sha256: 7bb18f932f97e63c2eb34bb869c44cd4f46f4adec4d7fe02298578dbba572445
+  require_full_stream: true
+  exclude_partial_credit: true
+  parse_requirement: assistments_action_parser.status == success
+
+split:
+  unit: user_id
+  seed_string: wdlf-r7-assistments-2012-CONFIRMATORY-v2-TO_FREEZE
+  fractions: {development: 0.70, calibration: 0.15, confirmatory: 0.15}
+  min_user_events: 3
+  note: New confirmatory seed; do not reuse pilot seeds for claims.
+
+schemas:
+  levels: [S0, S1, S2, S3]
+  rich_object: S4
+  nesting_required: true
+
+release_operators:
+  type: deterministic_nested_tuple
+  version: r6f-nested-1.0.0
+
+compatibility:
+  dictionary_split: development_only
+  cross_user_required: true
+  unsupported_is_first_class: true
+
+frontier_estimand:
+  primary: TYPE_I_same_rich_model_progressively_revealed_schema
+  secondary_optional: TYPE_II_schema_specific_deployment
+models:
+  transparent:
+    name: TransparentActionPFA
+    propagation: exact
+  neural:
+    name: ActionTokenGRU
+    params_approx: 33313
+    input_contract: skill+action_type; prior-event outcome tokens; no in-trace label leak
+    propagation: EXACT_empirical_compatible_traces
+    train_split: development
+    hparam_split: calibration
+    seeds: [17, 29, 41]
+
+policies:
+  checkpoint: post_attempt_mastery_after_current_action_stream
+  P1:
+    tau_primary: 0.80
+    tau_sensitivity: [0.70, 0.90]
+    labels: [Stable, Set-valued, Unsupported]
+  P2:
+    kappa_primary: 0.05
+    kappa_sensitivity: [0.01, 0.10]
+    method: interval_robust_rank_conservative
+    labels: [guaranteed-in, guaranteed-out, unresolved]
+    unresolved_semantics: non_certification_not_proven_switching
+    capacity_budget_B: "round(kappa * |U_cert,j,m|)"
+    ranking_population: U_cert_only
+    all_user_noncertification_rate: "(no_checkpoint_users + unresolved) / |U_all|"
+    note: Unsupported/no-checkpoint users are excluded from ranking; they enter NC_all numerator only.
+
+primary_frontier_endpoints:
+  per_schema_per_model:
+    - event_support_rate
+    - event_certified_stable_coverage_all_events
+    - conditional_set_valued_rate_among_supported
+    - event_noncertification_rate_all_events
+    - p2_full_users
+    - p2_eligible_users
+    - p2_eligibility_coverage
+    - p2_guaranteed_in
+    - p2_guaranteed_out
+    - p2_unresolved
+    - p2_all_user_noncertification_rate
+
+cost:
+  primary: [n_semantic_fields, action_payload_len]
+  secondary: canonical_utf8_bytes
+frontier_rule:
+  mode: PARETO_PRIMARY
+  axes: [cost, event_certified_stable_coverage, event_noncertification_rate, p2_all_user_noncertification_rate]
+  formal_minimum_sufficient_schema: false
+  descriptive_knee_allowed: true
+cross_model_summary:
+  framing: MODEL_SPECIFIC_PARETO
+  optional_robust_intersection: least-cost schema on descriptive knee shared by both models — reporting only, not a frozen sufficiency theorem
+
+inference:
+  P1: exact enumeration over C_dev
+  P2: conservative interval robust-rank
+  clustering: user-level for P2
+
+stopping_rule:
+  - prospective freeze tag before confirmatory unseal
+  - single sealed confirmatory pass
+  - no threshold retuning after confirmatory peek
+  - no Type-II confounding presented as Type-I
+
+forbidden:
+  - reuse of G3/G4/G5/G6 ASSISTments numeric results
+  - confirmatory dictionary construction
+  - replacing R5 package before PI accept of R7 outcomes
+  - claiming formal minimum-sufficient schema without external threshold source
+
+execution_state: NOT_RUN

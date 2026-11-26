@@ -1,0 +1,51 @@
+{
+  "s0_events": 70,
+  "same_event_positions_for_both_consumers": true,
+  "source_rows_head": [
+    5491444,
+    1017509,
+    969823,
+    2716943,
+    2824599,
+    6065243,
+    2597304,
+    4056094,
+    1760762,
+    3577532,
+    4223213,
+    754725
+  ],
+  "consumers": [
+    {
+      "consumer": "TransparentActionPFA",
+      "events": 70,
+      "p00_stable": 70,
+      "p00_set_valued": 0,
+      "p00_unsupported": 0,
+      "p00_false_stable": 0,
+      "p07_unsupported": 70,
+      "p07_stable": 0,
+      "p07_set_valued": 0,
+      "event_nc_increase_p00_to_p07": 70,
+      "stable_action_changes_while_both_supported": 0,
+      "point_interval_failures": 0
+    },
+    {
+      "consumer": "ActionTokenGRU",
+      "events": 70,
+      "p00_stable": 62,
+      "p00_set_valued": 8,
+      "p00_unsupported": 0,
+      "p00_false_stable": 0,
+      "p07_unsupported": 70,
+      "p07_stable": 0,
+      "p07_set_valued": 0,
+      "event_nc_increase_p00_to_p07": 62,
+      "stable_action_changes_while_both_supported": 0,
+      "point_interval_failures": 0
+    }
+  ],
+  "matches_expected_pfa": true,
+  "matches_expected_gru": true,
+  "interpretation_note": "PFA: 70 Stable under P00. GRU: 62 Stable and 8 Set-valued under P00. All 70 are Unsupported under P07. False-Stable is 0 for both."
+}

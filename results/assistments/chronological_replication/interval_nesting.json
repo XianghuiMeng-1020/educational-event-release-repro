@@ -1,0 +1,12 @@
+{
+  "matched_events_checked": 6744,
+  "positive_gap_count": 163,
+  "max_gap": 1.1920928955078125e-07,
+  "gaps_above_1e-5": 0,
+  "gaps_above_1e-6": 0,
+  "by_model": {
+    "ActionTokenGRU_unique_sequence": 163
+  },
+  "endpoints_within_1e-5_of_a_threshold": 0,
+  "interpretation": "Positive gaps are measured after scoring each distinct token sequence once. A zero PFA count means the closed-form intervals nest exactly."
+}

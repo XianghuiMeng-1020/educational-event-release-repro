@@ -1,0 +1,220 @@
+{
+  "assist_delta_boot": {
+    "created_utc": "2026-08-08T08:05:25.566272+00:00",
+    "n_bootstrap": 2000,
+    "seed": 20260808,
+    "unit": "user"
+  },
+  "assistments": {
+    "ActionTokenGRU_S0_to_S1": {
+      "delta_event_nc": -0.04790139481439712,
+      "delta_p2_nc": -0.1937629323086018,
+      "delta_set_given_support": -0.11034379889238113
+    },
+    "TransparentActionPFA_S0_to_S1": {
+      "delta_event_nc": 0.05785341149684545,
+      "delta_p2_nc": -0.050399054093999404
+    },
+    "note": "Paired user-level CIs for ASSISTments deferred until assist_heldout_user_aggregates.json is written.",
+    "status": "POINT_ESTIMATES_FROM_FROZEN_R7"
+  },
+  "assistments_S0_to_S1_deltas": {
+    "ActionTokenGRU": {
+      "delta_event_certified_stable_coverage_S1_minus_S0": {
+        "ci_high": 0.05171119311062483,
+        "ci_low": 0.0441778615544091,
+        "mean": 0.04786788109524501,
+        "n_boot": 2000
+      },
+      "delta_false_stable_rate_among_stable_S1_minus_S0": {
+        "ci_high": -0.0013684915906132312,
+        "ci_low": -0.001786101956954833,
+        "mean": -0.0015675817658826596,
+        "n_boot": 2000
+      },
+      "delta_support_rate_S1_minus_S0": {
+        "ci_high": -0.059177578625285415,
+        "ci_low": -0.06329177530875855,
+        "mean": -0.06121785098299256,
+        "n_boot": 2000
+      },
+      "n_users": 6766
+    },
+    "TransparentActionPFA": {
+      "delta_event_certified_stable_coverage_S1_minus_S0": {
+        "ci_high": -0.05574214701662479,
+        "ci_low": -0.060083878102207965,
+        "mean": -0.057834793476591345,
+        "n_boot": 2000
+      },
+      "delta_false_stable_rate_among_stable_S1_minus_S0": {
+        "ci_high": -2.7835846140124597e-05,
+        "ci_low": -5.403383427404179e-05,
+        "mean": -4.0452450715854665e-05,
+        "n_boot": 2000
+      },
+      "delta_support_rate_S1_minus_S0": {
+        "ci_high": -0.05915868191566209,
+        "ci_low": -0.06336633169660659,
+        "mean": -0.06119210648258462,
+        "n_boot": 2000
+      },
+      "n_users": 6766
+    }
+  },
+  "clustering": "user",
+  "created_utc": "2026-08-08T06:00:18.924918+00:00",
+  "eedi": {
+    "CategoricalDKT": {
+      "_sample_fields": [
+        "n_action_contained",
+        "n_actual_in_cdev",
+        "n_events",
+        "n_false_stable",
+        "n_set_valued",
+        "n_stable",
+        "n_supported",
+        "n_unsupported",
+        "p2_actual_risk",
+        "p2_eligible",
+        "p2_risk_max",
+        "p2_risk_min",
+        "p2_status"
+      ],
+      "actual_in_cdev_rate_supported": {
+        "ci95_hi": 1.0,
+        "ci95_lo": 0.9999500172914516,
+        "mean": 0.9999784313704606,
+        "n_boot": 2000
+      },
+      "false_stable_rate_among_stable": {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean": 0.0,
+        "n_boot": 2000
+      },
+      "p2_all_user_nc": {
+        "ci95_hi": 0.31243878550440746,
+        "ci95_lo": 0.2566111655239961,
+        "mean": 0.284833986287953,
+        "n_boot": 2000
+      },
+      "p2_reseat": {
+        "p2_all_user_noncertification_rate_reseat": {
+          "ci_high": 0.3139324191968658,
+          "ci_low": 0.2556317335945152,
+          "mean": 0.2860254652301664,
+          "n_boot": 500
+        },
+        "unresolved_rate_eligible_reseat": {
+          "ci_high": 0.31173448435421364,
+          "ci_low": 0.25343811394891946,
+          "mean": 0.28387256124908283,
+          "n_boot": 500
+        }
+      },
+      "p2_unresolved_rate_eligible": {
+        "ci95_hi": 0.31011556458718526,
+        "ci95_lo": 0.2551463386599492,
+        "mean": 0.2827199825938509,
+        "n_boot": 2000
+      },
+      "set_valued_given_supported": {
+        "ci95_hi": 0.04157569960764395,
+        "ci95_lo": 0.0353107227652659,
+        "mean": 0.038466608677323086,
+        "n_boot": 2000
+      },
+      "stable_given_supported": {
+        "ci95_hi": 0.9646892772347342,
+        "ci95_lo": 0.958424300392356,
+        "mean": 0.9615333913226769,
+        "n_boot": 2000
+      },
+      "supported_rate": {
+        "ci95_hi": 0.48230404021089246,
+        "ci95_lo": 0.4556233281946499,
+        "mean": 0.46884102450451487,
+        "n_boot": 2000
+      }
+    },
+    "PFA-Option": {
+      "_sample_fields": [
+        "n_action_contained",
+        "n_actual_in_cdev",
+        "n_events",
+        "n_false_stable",
+        "n_set_valued",
+        "n_stable",
+        "n_supported",
+        "n_unsupported",
+        "p2_actual_risk",
+        "p2_eligible",
+        "p2_risk_max",
+        "p2_risk_min",
+        "p2_status"
+      ],
+      "actual_in_cdev_rate_supported": {
+        "ci95_hi": 1.0,
+        "ci95_lo": 0.9999505411893219,
+        "mean": 0.99997841896683,
+        "n_boot": 2000
+      },
+      "false_stable_rate_among_stable": {
+        "ci95_hi": 0.0,
+        "ci95_lo": 0.0,
+        "mean": 0.0,
+        "n_boot": 2000
+      },
+      "p2_all_user_nc": {
+        "ci95_hi": 0.010773751224289911,
+        "ci95_lo": 0.0019588638589618022,
+        "mean": 0.005892262487757101,
+        "n_boot": 2000
+      },
+      "p2_reseat": {
+        "p2_all_user_noncertification_rate_reseat": {
+          "ci_high": 0.023506366307541625,
+          "ci_low": 0.0009794319294809011,
+          "mean": 0.00963173359451518,
+          "n_boot": 500
+        },
+        "unresolved_rate_eligible_reseat": {
+          "ci_high": 0.020639332719022203,
+          "ci_low": 0.0,
+          "mean": 0.006723483672795151,
+          "n_boot": 500
+        }
+      },
+      "p2_unresolved_rate_eligible": {
+        "ci95_hi": 0.0068694798822374874,
+        "ci95_lo": 0.0,
+        "mean": 0.0029944555824024683,
+        "n_boot": 2000
+      },
+      "set_valued_given_supported": {
+        "ci95_hi": 0.0001299490832322628,
+        "ci95_lo": 3.619021348496039e-05,
+        "mean": 8.040020509285076e-05,
+        "n_boot": 2000
+      },
+      "stable_given_supported": {
+        "ci95_hi": 0.999963809786515,
+        "ci95_lo": 0.9998700509167677,
+        "mean": 0.9999195997949072,
+        "n_boot": 2000
+      },
+      "supported_rate": {
+        "ci95_hi": 0.4823769844880513,
+        "ci95_lo": 0.45545660181238895,
+        "mean": 0.46881534335842695,
+        "n_boot": 2000
+      }
+    }
+  },
+  "n_boot": 2000,
+  "n_bootstrap": 2000,
+  "runtime_s_finalize": 134.8808057308197,
+  "seed": 20260808,
+  "unit": "user"
+}

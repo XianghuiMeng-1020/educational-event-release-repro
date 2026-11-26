@@ -1,0 +1,288 @@
+{
+  "protocol": {
+    "split_seed": "wdlf-r7-assistments-2012-CONFIRMATORY-v2-TO_FREEZE",
+    "tau_primary": 0.8,
+    "kappa_primary": 0.05,
+    "zip_sha256": "7bb18f932f97e63c2eb34bb869c44cd4f46f4adec4d7fe02298578dbba572445",
+    "checkpoint_sha256": "acd9b0c1650c13ad0739506db1d861e86e77f4be98f48c6c01f60520252dace2",
+    "neural_seed": 17,
+    "release_map_version": "r6f-nested-1.0.0",
+    "estimand": "TYPE_I",
+    "p2_B_from": "|U_cert|",
+    "nc_all_definition": "(no_checkpoint + unresolved) / |U_all|"
+  },
+  "split_counts": {
+    "events": {
+      "development": 4286981,
+      "confirmatory": 939910,
+      "calibration": 888158
+    },
+    "users": {
+      "development": 31753,
+      "calibration": 6804,
+      "confirmatory": 6766
+    }
+  },
+  "transparent": {
+    "S0": {
+      "model": "transparent",
+      "split": "confirmatory",
+      "n_events": 939910,
+      "supported": 919502,
+      "unsupported": 20408,
+      "support_rate": 0.9782872828249514,
+      "stable": 916316,
+      "set_valued": 3186,
+      "stable_given_supported": 0.9965350809459903,
+      "set_valued_given_supported": 0.0034649190540096703,
+      "event_certified_stable_coverage": 0.9748975965783958,
+      "event_noncertification_rate": 0.025102403421604195,
+      "p2_full_users": 6766,
+      "p2_eligible_users": 6754,
+      "p2_eligibility_rate": 0.9982264262488915,
+      "p2_no_checkpoint_users": 12,
+      "p2_seats_B": 338,
+      "p2_guaranteed_in": 173,
+      "p2_guaranteed_out": 6229,
+      "p2_unresolved": 352,
+      "p2_unresolved_rate_eligible": 0.05211726384364821,
+      "p2_all_user_noncertification_rate": 0.053798403783624,
+      "cost": {
+        "n_semantic_fields": 2.0,
+        "action_payload_len": 0.0,
+        "canonical_utf8_bytes": 10.771695162302773
+      }
+    },
+    "S1": {
+      "model": "transparent",
+      "split": "confirmatory",
+      "n_events": 939910,
+      "supported": 861968,
+      "unsupported": 77942,
+      "support_rate": 0.9170750390994883,
+      "stable": 861939,
+      "set_valued": 29,
+      "stable_given_supported": 0.9999663560596217,
+      "set_valued_given_supported": 3.3643940378297106e-05,
+      "event_certified_stable_coverage": 0.9170441850815504,
+      "event_noncertification_rate": 0.08295581491844964,
+      "p2_full_users": 6766,
+      "p2_eligible_users": 6749,
+      "p2_eligibility_rate": 0.9974874371859297,
+      "p2_no_checkpoint_users": 17,
+      "p2_seats_B": 337,
+      "p2_guaranteed_in": 334,
+      "p2_guaranteed_out": 6409,
+      "p2_unresolved": 6,
+      "p2_unresolved_rate_eligible": 0.0008890205956437991,
+      "p2_all_user_noncertification_rate": 0.0033993496896245934,
+      "cost": {
+        "n_semantic_fields": 4.0,
+        "action_payload_len": 0.0,
+        "canonical_utf8_bytes": 14.773976231766872
+      }
+    },
+    "S2": {
+      "model": "transparent",
+      "split": "confirmatory",
+      "n_events": 939910,
+      "supported": 859051,
+      "unsupported": 80859,
+      "support_rate": 0.9139715504675979,
+      "stable": 859048,
+      "set_valued": 3,
+      "stable_given_supported": 0.9999965077742765,
+      "set_valued_given_supported": 3.492225723501864e-06,
+      "event_certified_stable_coverage": 0.9139683586726388,
+      "event_noncertification_rate": 0.08603164132736113,
+      "p2_full_users": 6766,
+      "p2_eligible_users": 6746,
+      "p2_eligibility_rate": 0.9970440437481525,
+      "p2_no_checkpoint_users": 20,
+      "p2_seats_B": 337,
+      "p2_guaranteed_in": 337,
+      "p2_guaranteed_out": 6409,
+      "p2_unresolved": 0,
+      "p2_unresolved_rate_eligible": 0.0,
+      "p2_all_user_noncertification_rate": 0.0029559562518474726,
+      "cost": {
+        "n_semantic_fields": 5.0,
+        "action_payload_len": 1.0,
+        "canonical_utf8_bytes": 16.77397623176687
+      }
+    },
+    "S3": {
+      "model": "transparent",
+      "split": "confirmatory",
+      "n_events": 939910,
+      "supported": 839132,
+      "unsupported": 100778,
+      "support_rate": 0.8927790958708812,
+      "stable": 839132,
+      "set_valued": 0,
+      "stable_given_supported": 1.0,
+      "set_valued_given_supported": 0.0,
+      "event_certified_stable_coverage": 0.8927790958708812,
+      "event_noncertification_rate": 0.10722090412911875,
+      "p2_full_users": 6766,
+      "p2_eligible_users": 6744,
+      "p2_eligibility_rate": 0.9967484481229678,
+      "p2_no_checkpoint_users": 22,
+      "p2_seats_B": 337,
+      "p2_guaranteed_in": 336,
+      "p2_guaranteed_out": 6405,
+      "p2_unresolved": 3,
+      "p2_unresolved_rate_eligible": 0.00044483985765124553,
+      "p2_all_user_noncertification_rate": 0.0036949453148093407,
+      "cost": {
+        "n_semantic_fields": 6.0,
+        "action_payload_len": 3.7470225872689937,
+        "canonical_utf8_bytes": 38.420542392356715
+      }
+    }
+  },
+  "neural": {
+    "S0": {
+      "model": "neural",
+      "split": "confirmatory",
+      "n_events": 939910,
+      "supported": 919502,
+      "unsupported": 20408,
+      "support_rate": 0.9782872828249514,
+      "stable": 800530,
+      "set_valued": 118972,
+      "stable_given_supported": 0.8706125707176275,
+      "set_valued_given_supported": 0.1293874292823724,
+      "event_certified_stable_coverage": 0.8517092062005936,
+      "event_noncertification_rate": 0.14829079379940632,
+      "p2_full_users": 6766,
+      "p2_eligible_users": 6754,
+      "p2_eligibility_rate": 0.9982264262488915,
+      "p2_no_checkpoint_users": 12,
+      "p2_seats_B": 338,
+      "p2_guaranteed_in": 38,
+      "p2_guaranteed_out": 5161,
+      "p2_unresolved": 1555,
+      "p2_unresolved_rate_eligible": 0.23023393544566184,
+      "p2_all_user_noncertification_rate": 0.23159917233224947,
+      "cost": {
+        "n_semantic_fields": 2.0,
+        "action_payload_len": 0.0,
+        "canonical_utf8_bytes": 10.771695162302773
+      }
+    },
+    "S1": {
+      "model": "neural",
+      "split": "confirmatory",
+      "n_events": 939910,
+      "supported": 861968,
+      "unsupported": 77942,
+      "support_rate": 0.9170750390994883,
+      "stable": 845553,
+      "set_valued": 16415,
+      "stable_given_supported": 0.9809563696100088,
+      "set_valued_given_supported": 0.019043630389991274,
+      "event_certified_stable_coverage": 0.8996106010149908,
+      "event_noncertification_rate": 0.1003893989850092,
+      "p2_full_users": 6766,
+      "p2_eligible_users": 6749,
+      "p2_eligibility_rate": 0.9974874371859297,
+      "p2_no_checkpoint_users": 17,
+      "p2_seats_B": 337,
+      "p2_guaranteed_in": 250,
+      "p2_guaranteed_out": 6260,
+      "p2_unresolved": 239,
+      "p2_unresolved_rate_eligible": 0.035412653726478,
+      "p2_all_user_noncertification_rate": 0.03783624002364765,
+      "cost": {
+        "n_semantic_fields": 4.0,
+        "action_payload_len": 0.0,
+        "canonical_utf8_bytes": 14.773976231766872
+      }
+    },
+    "S2": {
+      "model": "neural",
+      "split": "confirmatory",
+      "n_events": 939910,
+      "supported": 859051,
+      "unsupported": 80859,
+      "support_rate": 0.9139715504675979,
+      "stable": 842933,
+      "set_valued": 16118,
+      "stable_given_supported": 0.9812374352628657,
+      "set_valued_given_supported": 0.01876256473713435,
+      "event_certified_stable_coverage": 0.8968231000840506,
+      "event_noncertification_rate": 0.1031768999159494,
+      "p2_full_users": 6766,
+      "p2_eligible_users": 6746,
+      "p2_eligibility_rate": 0.9970440437481525,
+      "p2_no_checkpoint_users": 20,
+      "p2_seats_B": 337,
+      "p2_guaranteed_in": 264,
+      "p2_guaranteed_out": 6305,
+      "p2_unresolved": 177,
+      "p2_unresolved_rate_eligible": 0.02623777053068485,
+      "p2_all_user_noncertification_rate": 0.029116169080697606,
+      "cost": {
+        "n_semantic_fields": 5.0,
+        "action_payload_len": 1.0,
+        "canonical_utf8_bytes": 16.77397623176687
+      }
+    },
+    "S3": {
+      "model": "neural",
+      "split": "confirmatory",
+      "n_events": 939910,
+      "supported": 839132,
+      "unsupported": 100778,
+      "support_rate": 0.8927790958708812,
+      "stable": 839132,
+      "set_valued": 0,
+      "stable_given_supported": 1.0,
+      "set_valued_given_supported": 0.0,
+      "event_certified_stable_coverage": 0.8927790958708812,
+      "event_noncertification_rate": 0.10722090412911875,
+      "p2_full_users": 6766,
+      "p2_eligible_users": 6744,
+      "p2_eligibility_rate": 0.9967484481229678,
+      "p2_no_checkpoint_users": 22,
+      "p2_seats_B": 337,
+      "p2_guaranteed_in": 337,
+      "p2_guaranteed_out": 6407,
+      "p2_unresolved": 0,
+      "p2_unresolved_rate_eligible": 0.0,
+      "p2_all_user_noncertification_rate": 0.00325155187703222,
+      "cost": {
+        "n_semantic_fields": 6.0,
+        "action_payload_len": 3.7470225872689937,
+        "canonical_utf8_bytes": 38.420542392356715
+      }
+    }
+  },
+  "pareto": {
+    "TransparentActionPFA": {
+      "nondominated": [
+        "TransparentActionPFA:S0",
+        "TransparentActionPFA:S1",
+        "TransparentActionPFA:S2"
+      ],
+      "dominated": [
+        "TransparentActionPFA:S3"
+      ],
+      "convention": "lower_cost_higher_coverage_lower_noncert"
+    },
+    "ActionTokenGRU": {
+      "nondominated": [
+        "ActionTokenGRU:S0",
+        "ActionTokenGRU:S1",
+        "ActionTokenGRU:S2",
+        "ActionTokenGRU:S3"
+      ],
+      "dominated": [],
+      "convention": "lower_cost_higher_coverage_lower_noncert"
+    }
+  },
+  "bundle_sha256": "a290b8bd67e7b556fdef1b45217c05b2877310e9a1d7467b0e288cd5f607553a",
+  "formal_minimum_sufficient_schema": false,
+  "nc_all_definition": "(no_checkpoint + unresolved) / |U_all|"
+}

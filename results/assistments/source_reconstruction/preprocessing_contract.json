@@ -1,0 +1,38 @@
+{
+  "functions": {
+    "reader": "scripts/wdlf_r7/run_release_frontier_confirmatory.py:stream_all_events",
+    "parser": "src/data/assistments_action_parser.py:parse_actions_field",
+    "correctness": "scripts/wdlf_r7/r7_core.py:bin_correct",
+    "split": "scripts/wdlf_r7/r7_core.py:user_bucket",
+    "release_key": "scripts/wdlf_r7/r7_core.py:release_key",
+    "rich_signature": "scripts/wdlf_r7/r7_core.py:rich_signature"
+  },
+  "split_seed": "wdlf-r7-assistments-2012-CONFIRMATORY-v2-TO_FREEZE",
+  "fractions": {
+    "development": 0.7,
+    "calibration": 0.15,
+    "confirmatory": 0.15
+  },
+  "minimum_user_events": 3,
+  "correctness": "float(raw) >= 1 -> 1; float(raw) <= 0 -> 0; otherwise drop, including partial credit",
+  "parser_acceptance": "status == success and action_types nonempty. Partial and failed parses are dropped.",
+  "action_type_normalization": "str(type).lower() with no further synonym map",
+  "timestamp_handling": "parser timestamps are stored as strings; None becomes empty string. Event start_time and end_time are not read by the frozen consumer.",
+  "release_keys": {
+    "S0": "(S0, problem_id, correct)",
+    "S1": "(S1, problem_id, correct, hint_count, attempt_count)",
+    "S2": "(S2, problem_id, correct, hint_count, attempt_count, first_action)",
+    "S3": "(S3, problem_id, correct, hint_count, attempt_count, first_action, action_types)",
+    "rich_signature": "(problem_id, correct, hint_count, attempt_count, first_action, action_types, action_timestamps)"
+  },
+  "order_dependencies": [
+    "DictReader yields CSV row order.",
+    "stream_all_events appends kept rows in that order.",
+    "The minimum-event filter uses a list comprehension and preserves relative order.",
+    "No per-user temporal sort exists in the parser or the event builder.",
+    "user_bucket and release_key do not read row position.",
+    "Later certificate code may sort user ids for ranking; it does not reorder a user's events."
+  ],
+  "counts_not_rederived": "hint_count, attempt_count, and first_action are copied from CSV columns. They are not replaced by parsed action counts.",
+  "historical_script_not_executed": true
+}

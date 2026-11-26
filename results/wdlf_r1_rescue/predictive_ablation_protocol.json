@@ -1,0 +1,74 @@
+{
+  "protocol_id": "wdlf_r1_rescue_predictive_ablation_v1",
+  "status": "FROZEN_BEFORE_RUN_THEN_EXECUTED",
+  "frozen_utc": "2026-08-08T04:14:00+00:00",
+  "executed_utc": "2026-08-08T04:17:35+00:00",
+  "invariants": [
+    "Do not alter frozen primary 100% development analyses",
+    "Do not tune thresholds/schemas to improve headlines",
+    "Confirmatory rich traces must not enter C_dev",
+    "Certificate Event NC / P2 NC taken from frozen CSVs (not re-tuned)"
+  ],
+  "estimand_question": "Can predictive metrics (AUC/NLL/Brier) change little while certification Event NC / P2 NC change a lot, especially S0→S1?",
+  "assistments": {
+    "dataset": "ASSISTments 2012 sealed R7 splits",
+    "split_seed": "wdlf-r7-assistments-2012-CONFIRMATORY-v2-TO_FREEZE",
+    "eval_split": "confirmatory",
+    "model_family": "TransparentActionPFA",
+    "matched_comparison": {
+      "S0_observable_inputs": {
+        "update_fields": ["skill_id", "correct"],
+        "ignored_on_update": ["hint_count", "attempt_count", "action_types", "first_action", "action_timestamps"],
+        "prediction": "next-event correctness via mastery(skill) before observing outcome"
+      },
+      "S1_observable_inputs": {
+        "update_fields": ["skill_id", "correct", "hint_count", "attempt_count"],
+        "ignored_on_update": ["action_types", "first_action", "action_timestamps"],
+        "prediction": "next-event correctness via mastery(skill) before observing outcome"
+      }
+    },
+    "predictive_metrics": ["roc_auc", "log_loss", "brier"],
+    "certificate_source": {
+      "p1": "results/wdlf_r7/p1_by_schema_model.csv",
+      "p2": "results/wdlf_r7/p2_by_schema_model.csv",
+      "model_row": "TransparentActionPFA",
+      "schemas": ["S0", "S1"],
+      "note": "Frozen R7 endpoints; not recomputed or re-tuned in this ablation"
+    },
+    "neural": "DEFERRED — TransparentActionPFA exact/fast preferred; ActionTokenGRU predictive ablation not required for this rescue track"
+  },
+  "eedi": {
+    "dataset": "Eedi tasks_3_4_joined_min via g6p cache",
+    "split_fn": "src.data.eedi_split.assign_eedi_split",
+    "eval_split": "confirmatory",
+    "model_family": "PFA-Option",
+    "matched_comparison": {
+      "R0_omit_option": {
+        "checkpoint": "prospective/g6p/checkpoints/pfa_option_params.json#r0",
+        "representation": "EEDI-R0",
+        "use_option_covariates": false
+      },
+      "R1_option_aware": {
+        "checkpoint": "prospective/g6p/checkpoints/pfa_option_params.json#r1",
+        "representation": "EEDI-R1",
+        "use_option_covariates": true
+      }
+    },
+    "predictive_metrics": ["roc_auc", "log_loss", "brier"],
+    "certificate_source": {
+      "p1": "results/wdlf_r3/p1_results.csv",
+      "p2": "results/wdlf_r3/p2_results.csv",
+      "model_row": "PFA-Option",
+      "note": "Frozen R3 local-conditional certificates (option ambiguity under R0 keys). Predictive R0 vs R1 is input-ablation on held-out; certificate estimand is not a schema S0/S1 ladder."
+    },
+    "categorical_dkt": "OPTIONAL closest comparator if PFA scoring fails; otherwise document deferred",
+    "limitations": [
+      "Eedi certificate NC is from option-ambiguity certification, not release-schema S0→S1",
+      "PFA-Option params are frozen g6p checkpoints (not re-fit on confirmatory)"
+    ]
+  },
+  "outputs": {
+    "results_json": "results/wdlf_r1_rescue/predictive_ablation.json",
+    "report_md": "reports/WDLF_R1_PREDICTIVE_ABLATION.md"
+  }
+}

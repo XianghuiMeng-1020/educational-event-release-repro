@@ -1,0 +1,7 @@
+information,available_to_baseline,role,external_release_user
+pre-event history,yes,frozen steward-side state at interaction start,not established
+release key S0-S3,yes,compatibility-class lookup,schema-dependent
+development compatibility frequencies,yes,action votes and modal fingerprint,audit library
+frozen consumer weights,yes,score a fingerprint at the fixed state,model access assumed for the audit
+hidden current completion outside the release key,no,excluded from prediction,absent
+realized policy action,evaluation and calibration only,"label, not a predictive feature",not an input

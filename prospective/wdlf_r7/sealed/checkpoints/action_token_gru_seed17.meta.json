@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "epochs": 2,
+    "user_cap": 3000,
+    "max_train_events_per_user": 40,
+    "n_skills": 264,
+    "n_action_types": 8,
+    "loss_hist": [
+      0.19030845299136248,
+      0.18602403928830447
+    ],
+    "param_count": 33857,
+    "seed": 17
+  },
+  "checkpoint_sha256": "acd9b0c1650c13ad0739506db1d861e86e77f4be98f48c6c01f60520252dace2",
+  "split_seed": "wdlf-r7-assistments-2012-CONFIRMATORY-v2-TO_FREEZE",
+  "train_events": 4286981,
+  "runtime_s": 1170.829321861267,
+  "created_utc": "2026-08-07T16:18:53.428146+00:00"
+}

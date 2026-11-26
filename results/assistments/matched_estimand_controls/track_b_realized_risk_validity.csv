@@ -1,0 +1,9 @@
+analysis,model,schema,kappa,n,inside,outside,false_guaranteed_in,false_guaranteed_out,false_guaranteed_in_outside_interval,false_guaranteed_out_outside_interval
+completion_time_native,ActionTokenLogit,S0,0.050000000000000003,6754,6583,171,0,0,0,0
+matched_event,ActionTokenLogit,S0,0.050000000000000003,6744,6744,0,0,0,0,0
+completion_time_native,ActionTokenLogit,S1,0.050000000000000003,6749,6638,111,2,0,2,0
+matched_event,ActionTokenLogit,S1,0.050000000000000003,6744,6744,0,0,0,0,0
+completion_time_native,ActionTokenLogit,S2,0.050000000000000003,6746,6655,91,2,0,2,0
+matched_event,ActionTokenLogit,S2,0.050000000000000003,6744,6744,0,0,0,0,0
+completion_time_native,ActionTokenLogit,S3,0.050000000000000003,6744,6744,0,0,0,0,0
+matched_event,ActionTokenLogit,S3,0.050000000000000003,6744,6744,0,0,0,0,0

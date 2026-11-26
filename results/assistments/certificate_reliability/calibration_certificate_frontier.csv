@@ -1,0 +1,9 @@
+split,consumer,schema,valid_events,stable,set_valued,unsupported,false_stable,stable_uncovered,supported,partition
+calibration,TransparentActionPFA,S0,887997,860290,2418,25289,34,50943,862708,887997
+calibration,TransparentActionPFA,S1,887997,808027,15,79955,0,13569,808042,887997
+calibration,TransparentActionPFA,S2,887997,805366,3,82628,0,11852,805369,887997
+calibration,TransparentActionPFA,S3,887997,786789,0,101208,0,0,786789,887997
+calibration,ActionTokenGRU,S0,887997,757839,104869,25289,1013,31875,862708,887997
+calibration,ActionTokenGRU,S1,887997,793857,14185,79955,266,13142,808042,887997
+calibration,ActionTokenGRU,S2,887997,791470,13899,82628,266,11525,805369,887997
+calibration,ActionTokenGRU,S3,887997,786789,0,101208,0,0,786789,887997

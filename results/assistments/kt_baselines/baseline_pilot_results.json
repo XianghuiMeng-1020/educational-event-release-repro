@@ -1,0 +1,26 @@
+{
+  "input_audit": {
+    "checked": 250,
+    "violations": 0,
+    "future": 0,
+    "action_fields_in_model_input": 0,
+    "pass": true
+  },
+  "bkt_analytic": {
+    "first_prediction": 0.42000000000000004,
+    "after_correct_mastery": 0.8857142857142858,
+    "after_incorrect_mastery": 0.25517241379310346,
+    "cold_start": 0.42000000000000004,
+    "prediction_after_one_correct": 0.8085714285714287,
+    "pass": true
+  },
+  "mechanism": {
+    "dkt_batch_gap": 0.0,
+    "sakt_batch_gap": 0.0,
+    "akt_current_response_gap": 0.0,
+    "dkt_empty_finite": true,
+    "pass": true
+  },
+  "calibration_examples": 16881,
+  "calibration_users": 128
+}

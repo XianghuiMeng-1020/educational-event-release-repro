@@ -1,0 +1,5 @@
+rule_id,baseline_rule,population,original_supported,variant_supported,new,lost,retained,net,new_correct,new_incorrect,lost_correct,lost_incorrect,new_events_are_singleton_class,lost_events_fail_user_floor_only,identities_ok
+S_u2_p1,C_u2_p1,294426,138039,294420,156381,0,138039,156381,156375,6,0,0,True,True,True
+S_u5_p1,C_u2_p1,294426,138039,294398,156362,3,138036,156359,156362,0,0,3,True,True,True
+S_u10_p1,C_u2_p1,294426,138039,294346,156319,12,138027,156307,156319,0,0,12,True,True,True
+S_u20_p1,C_u2_p1,294426,138039,293861,155932,110,137929,155822,155932,0,0,110,True,True,True

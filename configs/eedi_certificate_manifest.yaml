@@ -1,0 +1,167 @@
+# WDLF Auth R3 confirmatory extension manifest v3
+# AUTHORITATIVE for prospective local-conditional confirmatory extension.
+# Supersedes v2 for this NEW prospective extension only.
+# MUST be tagged wdlf-auth-r3-protocol-frozen BEFORE any confirmatory effects.
+version: wdlf_r3_confirmatory_extension_v3
+status: protocol_frozen_pre_outcome
+execution: NOT_RUN_AT_FREEZE
+not_part_of_original_g6p_preregistration: true
+project_identity:
+  authentic_wdlf: true
+  level: A
+  estimand: local_conditional_release_adequacy
+  interpretation: >
+    Conditional on realized richer pre-event state, vary CURRENT omitted
+    selected-option semantics over development-supported compatible completions,
+    propagate exactly through fixed models, ask whether subsequent pedagogical
+    decision is unique.
+  not:
+    - full_R0_release_sufficiency
+    - release_only_identification_over_all_hidden_history
+    - causal_effect_of_selected_option
+    - utility_or_harm
+    - topk_churn_attribution
+    - movielens_bpr_mmd
+
+data:
+  source: official_eedi_tasks_3_4
+  cache_path: prospective/g6p/data/cache/tasks_3_4_joined_min.parquet
+  cache_sha256: 1388748a532916aed113ec82a17e92b0177c92d9e26230f934716f2fdc0b1f84
+  student_split: frozen_dev_cal_conf
+  n_confirmatory_users: 1021
+  n_calibration_users: 1032
+  n_development_users: 2865
+  split_changes_allowed: false
+
+compatibility_dictionary:
+  development_only: true
+  key: [EEDI-R0, QuestionId, SubjectId, IsCorrect]
+  rules:
+    min_options: 2
+    min_students: 2
+    min_students_per_option: 1
+  candidate_option_normalization: integer_answer_value_1_to_4
+  unsupported_rule: empty_C_dev_for_released_key
+  confirmatory_hidden_option_used_to_define_C_dev: false
+
+models:
+  no_training: true
+  pfa_option:
+    checkpoint: prospective/g6p/checkpoints/pfa_option_params.json
+    checkpoint_sha256: ae1b9b11911f8718d09abe3c47e315a45015e53b068b4449851e70bac6132c6b
+    representation_for_propagation: EEDI-R1
+  categorical_dkt:
+    checkpoint_r1: prospective/g6p/checkpoints/categorical_dkt_r1.pt
+    checkpoint_r1_sha256: 6781890f8807d6c58510cab5419017e339412bc111bed5d63873253d38b077e2
+    checkpoint_r0: prospective/g6p/checkpoints/categorical_dkt_r0.pt
+    checkpoint_r0_sha256: ff573a4f75ef05d91beef62ccc2b7599cab52dc5a1d92e8ecbeb8c850d05d527
+    n_questions: 947
+    max_history: 200
+    representation_for_propagation: EEDI-R1
+
+temporal_contract:
+  richer_prehistory: fixed_realized
+  current_a_t: varied_over_C_dev
+  decision_checkpoint: post_ingest_state
+  canonical_score: post_ingest_mastery_proxy
+  future_item_identity_required: false
+
+score_contract:
+  pfa:
+    state: updated_subject_sufficient_stats_after_ingest_y_a
+    p_u: predict_proba_from_feats(post_state)
+    risk: 1 - p_u
+  dkt:
+    state: LSTM_h_c_after_candidate_R1_token_from_h_tm1
+    p_u: sigmoid(W h)
+    risk: 1 - p_u
+  decision_time_available: true
+  cross_user_comparable: true
+
+population_contract:
+  option: A_CERTIFICATE_ELIGIBLE_POLICY_POPULATION
+  frame_users: 1021
+  U_cert: users_with_ge1_development_supported_canonical_checkpoint
+  canonical_checkpoint: last_supported_confirmatory_interaction
+  capacity_B: round(kappa * |U_cert|)
+  report_certificate_coverage: "|U_cert|/1021"
+  not_identical_to_old_g6p_p2_population: true
+
+P1:
+  population_unit: confirmatory_event
+  primary_tau: 0.80
+  secondary_tau: [0.70, 0.90]
+  primary_endpoints:
+    - support_unsupported
+    - Stable
+    - Set-valued
+    - Uncertified
+    - compatible_set_size
+    - decision_set_size
+  rules:
+    partial_search_singleton: uncertified_not_stable
+    success_does_not_require_nonzero_set_valued: true
+    do_not_pool_with_old_g6p_p1: true
+
+P2:
+  contract: P2_A
+  primary_kappa: 0.05
+  secondary_kappa: [0.01, 0.10]
+  tie_rule: risk_desc_userid_asc
+  primary_endpoints:
+    - guaranteed_in
+    - guaranteed_out
+    - ambiguous
+    - certificate_coverage
+  membership:
+    preferred: discrete_brute_force_when_product_le_200000
+    fallback: interval_robust_rank_sound_conservative
+  old_g6p_p2_replacement_is_not_primary: true
+
+secondary_diagnostic:
+  name: REFERENCE_RELATIVE_PIPELINE_DIAGNOSTIC
+  object: lossy_pipeline_shortlist_vs_independent_option_aware_reference_shortlist
+  endpoints:
+    - changed_seats
+    - replacement
+  not:
+    - identified_set_ambiguity
+    - educational_regret
+    - causal_effect
+    - harm
+    - primary_p2_certificate
+
+inference:
+  primary: exact_finite_population_counts_rates
+  cluster_unit: student_user
+  bootstrap_primary: false
+  fixed_seed_if_secondary_resampling: 20260807
+  fixed_resampling_count_if_used: 1000
+
+output:
+  sealed_first: true
+  sealed_dir: prospective/wdlf_r3/sealed/
+  unsealed_dir: results/wdlf_r3/
+  no_scientific_values_to_stdout_before_unseal: true
+
+stopping:
+  one_complete_execution: true
+  no_sequential_augmentation: true
+  no_rerun_with_changed_endpoints_after_effects: true
+
+runner: scripts/wdlf_r3/run_r3_local_conditional.py
+inference_device_dkt: cpu
+inference_device_rationale: sequential_one_token_forks_cpu_stable
+engineering_incident_pre_outcome: docs/WDLF_R3_INCIDENT_ENGINEERING_DEVICE.md
+pi_authorization: AUTHORIZED_AFTER_PRE_RUN_GATES
+forbidden_after_freeze:
+  - retrain_models
+  - change_checkpoints
+  - change_development_dictionary_from_effects
+  - change_tau
+  - change_kappa
+  - change_candidate_option_rules
+  - add_datasets_policies_models
+  - switch_to_LEVEL_R_after_outcomes
+  - erase_old_g6p_p1_p2
+  - minimum_sufficient_logging_analysis

@@ -1,0 +1,19 @@
+{
+  "R7_SEALED_VALID": true,
+  "checks": {
+    "bundle_exists": true,
+    "checksum_match": true,
+    "schemas_present": true,
+    "models_present": true,
+    "checkpoint_sha_recorded": true,
+    "nesting_pass": true,
+    "conf_users_positive": true,
+    "dictionary_dev_only_flag": true,
+    "endpoints_p1": true,
+    "endpoints_p2": true,
+    "B_from_Ucert": true
+  },
+  "n_cells": 8,
+  "bundle_sha256": "a290b8bd67e7b556fdef1b45217c05b2877310e9a1d7467b0e288cd5f607553a",
+  "recomputed_sha256": "a290b8bd67e7b556fdef1b45217c05b2877310e9a1d7467b0e288cd5f607553a"
+}

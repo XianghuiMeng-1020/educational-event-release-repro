@@ -1,0 +1,171 @@
+{
+  "analytic": {
+    "first_prediction": 0.42000000000000004,
+    "after_correct_mastery": 0.8857142857142858,
+    "after_incorrect_mastery": 0.25517241379310346,
+    "cold_start": 0.42000000000000004,
+    "prediction_after_one_correct": 0.8085714285714287,
+    "pass": true
+  },
+  "pooled": {
+    "parameters": [
+      0.6953655372134276,
+      0.01635696667459404,
+      0.39303181405400783,
+      0.20923249974651162
+    ],
+    "success": true,
+    "n_iter": 20,
+    "nll": 11973.126214960976,
+    "n": 20000
+  },
+  "skills_fit": 148,
+  "fallback": 117,
+  "failed": 0,
+  "minimum_skill_count": 30,
+  "details_head": [
+    {
+      "skill": 0,
+      "n": 0,
+      "source": "pooled_fallback"
+    },
+    {
+      "skill": 1,
+      "n": 102452,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 3
+    },
+    {
+      "skill": 2,
+      "n": 1222,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 14
+    },
+    {
+      "skill": 3,
+      "n": 2496,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 20
+    },
+    {
+      "skill": 4,
+      "n": 1654,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 15
+    },
+    {
+      "skill": 5,
+      "n": 4842,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 15
+    },
+    {
+      "skill": 6,
+      "n": 223,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 21
+    },
+    {
+      "skill": 7,
+      "n": 4219,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 12
+    },
+    {
+      "skill": 8,
+      "n": 453,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 12
+    },
+    {
+      "skill": 9,
+      "n": 623,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 12
+    },
+    {
+      "skill": 10,
+      "n": 517,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 11
+    },
+    {
+      "skill": 11,
+      "n": 669,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 13
+    },
+    {
+      "skill": 12,
+      "n": 1744,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 18
+    },
+    {
+      "skill": 13,
+      "n": 1119,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 16
+    },
+    {
+      "skill": 14,
+      "n": 614,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 13
+    },
+    {
+      "skill": 15,
+      "n": 1144,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 12
+    },
+    {
+      "skill": 16,
+      "n": 784,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 11
+    },
+    {
+      "skill": 17,
+      "n": 1569,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 12
+    },
+    {
+      "skill": 18,
+      "n": 61,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 9
+    },
+    {
+      "skill": 19,
+      "n": 190,
+      "source": "skill_mle",
+      "success": true,
+      "n_iter": 14
+    }
+  ],
+  "n_details": 265,
+  "scalar_matrix_gap": 0.0,
+  "parameter_sha256": "c2f583920b45da851b46b914ba59d17749064bbf616f65ccc90bca29d7d9ca18",
+  "forgetting": 0,
+  "prediction": "before current outcome"
+}

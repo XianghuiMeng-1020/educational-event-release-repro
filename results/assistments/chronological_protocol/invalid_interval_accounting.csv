@@ -1,0 +1,4 @@
+split,events,valid_intervals,invalid_intervals,invalid_correct,invalid_incorrect,users,users_with_invalid_interval
+development,4286981,4286506,475,228,247,31753,185
+calibration,888158,887997,161,90,71,6804,47
+confirmatory,939910,939819,91,44,47,6766,40

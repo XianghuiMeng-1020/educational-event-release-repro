@@ -1,0 +1,6 @@
+schema,development_events,n_keys,n_keys_with_multiple_rich_signatures,n_keys_with_at_least_two_users,reported_approximate_keys,frozen_repository_key_count,difference_from_reported_approximation,n_s3_keys_with_multiple_timestamp_variants,nesting_checked,nesting_violations,digest
+S0,4286981,259838,194499,192712.0,259838.0,,0.0,,,,
+S1,4286981,511770,278443,276532.0,511770.0,,0.0,,,,
+S2,4286981,523378,278647,276732.0,523378.0,,0.0,,,,
+S3,4286981,605097,275230,273299.0,605097.0,,0.0,,,,
+rich_signature,4286981,4286981,0,,,,,275230.0,17147924.0,0.0,blake2s-128 of repr(rich_signature); cardinality only

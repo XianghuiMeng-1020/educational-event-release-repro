@@ -1,0 +1,5 @@
+analysis,model,schema,kappa,tie_rule,n_full,n_eligible,n_no_checkpoint,B,guaranteed_in,guaranteed_out,unresolved,all_user_capacity_nc
+completion_time_native,ActionTokenLogit,S0,0.050000000000000003,adversarial,6766,6754,12,338,0,5271,1483,0.22095772982559858
+completion_time_native,ActionTokenLogit,S1,0.050000000000000003,adversarial,6766,6749,17,337,226,6281,242,0.038279633461424774
+completion_time_native,ActionTokenLogit,S2,0.050000000000000003,adversarial,6766,6746,20,337,241,6296,209,0.033845699083653563
+completion_time_native,ActionTokenLogit,S3,0.050000000000000003,adversarial,6766,6744,22,337,337,6407,0,0.0032515518770322199

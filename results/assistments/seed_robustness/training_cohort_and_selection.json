@@ -1,0 +1,19 @@
+{
+  "design": "FIXED_COHORT_INITIALIZATION_AND_OPTIMIZATION_SEED_ROBUSTNESS",
+  "selection_sha256": "cbe4fd9e0075c78ae5997892153d37920497d14c64a21af3ffbf3594e5c907e2",
+  "epoch_sizes": [
+    3000,
+    3000
+  ],
+  "union": 5715,
+  "intersection": 285,
+  "valid_examples_by_epoch": [
+    90950,
+    90942
+  ],
+  "duplicate_targets_by_epoch": [
+    0,
+    0
+  ],
+  "limitation": "Seeds change initialization and optimization only. They do not resample the training users."
+}

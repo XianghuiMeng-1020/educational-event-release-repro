@@ -1,0 +1,249 @@
+{
+  "corollary_checks": [
+    {
+      "added_unsupported_mass": 57534,
+      "ambiguity_removed_count": 3157,
+      "identity_ok": true,
+      "model": "TransparentActionPFA",
+      "net_nc_count_change": 54377,
+      "refinement_improves_unconditional_nc": false,
+      "transition": "S0->S1"
+    },
+    {
+      "added_unsupported_mass": 2917,
+      "ambiguity_removed_count": 26,
+      "identity_ok": true,
+      "model": "TransparentActionPFA",
+      "net_nc_count_change": 2891,
+      "refinement_improves_unconditional_nc": false,
+      "transition": "S1->S2"
+    },
+    {
+      "added_unsupported_mass": 19919,
+      "ambiguity_removed_count": 3,
+      "identity_ok": true,
+      "model": "TransparentActionPFA",
+      "net_nc_count_change": 19916,
+      "refinement_improves_unconditional_nc": false,
+      "transition": "S2->S3"
+    },
+    {
+      "added_unsupported_mass": 57534,
+      "ambiguity_removed_count": 102557,
+      "identity_ok": true,
+      "model": "ActionTokenGRU",
+      "net_nc_count_change": -45023,
+      "refinement_improves_unconditional_nc": true,
+      "transition": "S0->S1"
+    },
+    {
+      "added_unsupported_mass": 2917,
+      "ambiguity_removed_count": 297,
+      "identity_ok": true,
+      "model": "ActionTokenGRU",
+      "net_nc_count_change": 2620,
+      "refinement_improves_unconditional_nc": false,
+      "transition": "S1->S2"
+    },
+    {
+      "added_unsupported_mass": 19919,
+      "ambiguity_removed_count": 16118,
+      "identity_ok": true,
+      "model": "ActionTokenGRU",
+      "net_nc_count_change": 3801,
+      "refinement_improves_unconditional_nc": false,
+      "transition": "S2->S3"
+    }
+  ],
+  "models": {
+    "ActionTokenGRU": {
+      "S0": {
+        "a_ambiguous_and_supported_rate": 0.12657807662435766,
+        "ambiguous_given_supported": 0.1293874292823724,
+        "n_events": 939910,
+        "nc_equals_u_plus_a": true,
+        "nc_rate": 0.14829079379940632,
+        "set_valued": 118972,
+        "stable": 800530,
+        "support_rate": 0.9782872828249514,
+        "supported": 919502,
+        "u_unsupported_rate": 0.021712717175048676,
+        "unsupported": 20408
+      },
+      "S1": {
+        "a_ambiguous_and_supported_rate": 0.017464438084497453,
+        "ambiguous_given_supported": 0.019043630389991274,
+        "n_events": 939910,
+        "nc_equals_u_plus_a": true,
+        "nc_rate": 0.1003893989850092,
+        "set_valued": 16415,
+        "stable": 845553,
+        "support_rate": 0.9170750390994883,
+        "supported": 861968,
+        "u_unsupported_rate": 0.08292496090051175,
+        "unsupported": 77942
+      },
+      "S2": {
+        "a_ambiguous_and_supported_rate": 0.01714845038354736,
+        "ambiguous_given_supported": 0.01876256473713435,
+        "n_events": 939910,
+        "nc_equals_u_plus_a": true,
+        "nc_rate": 0.1031768999159494,
+        "set_valued": 16118,
+        "stable": 842933,
+        "support_rate": 0.9139715504675979,
+        "supported": 859051,
+        "u_unsupported_rate": 0.08602844953240203,
+        "unsupported": 80859
+      },
+      "S3": {
+        "a_ambiguous_and_supported_rate": 0.0,
+        "ambiguous_given_supported": 0.0,
+        "n_events": 939910,
+        "nc_equals_u_plus_a": true,
+        "nc_rate": 0.10722090412911875,
+        "set_valued": 0,
+        "stable": 839132,
+        "support_rate": 0.8927790958708812,
+        "supported": 839132,
+        "u_unsupported_rate": 0.10722090412911875,
+        "unsupported": 100778
+      }
+    },
+    "TransparentActionPFA": {
+      "S0": {
+        "a_ambiguous_and_supported_rate": 0.0033896862465555215,
+        "ambiguous_given_supported": 0.0034649190540096703,
+        "n_events": 939910,
+        "nc_equals_u_plus_a": true,
+        "nc_rate": 0.025102403421604195,
+        "set_valued": 3186,
+        "stable": 916316,
+        "support_rate": 0.9782872828249514,
+        "supported": 919502,
+        "u_unsupported_rate": 0.021712717175048676,
+        "unsupported": 20408
+      },
+      "S1": {
+        "a_ambiguous_and_supported_rate": 3.085401793788767e-05,
+        "ambiguous_given_supported": 3.3643940378297106e-05,
+        "n_events": 939910,
+        "nc_equals_u_plus_a": true,
+        "nc_rate": 0.08295581491844964,
+        "set_valued": 29,
+        "stable": 861939,
+        "support_rate": 0.9170750390994883,
+        "supported": 861968,
+        "u_unsupported_rate": 0.08292496090051175,
+        "unsupported": 77942
+      },
+      "S2": {
+        "a_ambiguous_and_supported_rate": 3.191794959091828e-06,
+        "ambiguous_given_supported": 3.492225723501864e-06,
+        "n_events": 939910,
+        "nc_equals_u_plus_a": true,
+        "nc_rate": 0.08603164132736113,
+        "set_valued": 3,
+        "stable": 859048,
+        "support_rate": 0.9139715504675979,
+        "supported": 859051,
+        "u_unsupported_rate": 0.08602844953240203,
+        "unsupported": 80859
+      },
+      "S3": {
+        "a_ambiguous_and_supported_rate": 0.0,
+        "ambiguous_given_supported": 0.0,
+        "n_events": 939910,
+        "nc_equals_u_plus_a": true,
+        "nc_rate": 0.10722090412911875,
+        "set_valued": 0,
+        "stable": 839132,
+        "support_rate": 0.8927790958708812,
+        "supported": 839132,
+        "u_unsupported_rate": 0.10722090412911875,
+        "unsupported": 100778
+      }
+    }
+  },
+  "source": "results\\wdlf_r1_rescue\\assist_heldout_validity.json",
+  "transitions": [
+    {
+      "ambiguity_removed": 0.003358832228617634,
+      "count_delta_nc_mass": 54377,
+      "count_delta_set_valued": -3157,
+      "count_delta_unsupported": 57534,
+      "delta_a": -0.003358832228617634,
+      "delta_nc": 0.05785341149684545,
+      "delta_nc_equals_du_plus_da": true,
+      "delta_u_added_unsupported": 0.06121224372546308,
+      "model": "TransparentActionPFA",
+      "refinement_improves_nc": false,
+      "transition": "S0->S1"
+    },
+    {
+      "ambiguity_removed": 2.7662222978795845e-05,
+      "count_delta_nc_mass": 2891,
+      "count_delta_set_valued": -26,
+      "count_delta_unsupported": 2917,
+      "delta_a": -2.7662222978795845e-05,
+      "delta_nc": 0.0030758264089114917,
+      "delta_nc_equals_du_plus_da": true,
+      "delta_u_added_unsupported": 0.0031034886318902777,
+      "model": "TransparentActionPFA",
+      "refinement_improves_nc": false,
+      "transition": "S1->S2"
+    },
+    {
+      "ambiguity_removed": 3.191794959091828e-06,
+      "count_delta_nc_mass": 19916,
+      "count_delta_set_valued": -3,
+      "count_delta_unsupported": 19919,
+      "delta_a": -3.191794959091828e-06,
+      "delta_nc": 0.02118926280175762,
+      "delta_nc_equals_du_plus_da": true,
+      "delta_u_added_unsupported": 0.021192454596716717,
+      "model": "TransparentActionPFA",
+      "refinement_improves_nc": false,
+      "transition": "S2->S3"
+    },
+    {
+      "ambiguity_removed": 0.10911363853986021,
+      "count_delta_nc_mass": -45023,
+      "count_delta_set_valued": -102557,
+      "count_delta_unsupported": 57534,
+      "delta_a": -0.10911363853986021,
+      "delta_nc": -0.04790139481439712,
+      "delta_nc_equals_du_plus_da": true,
+      "delta_u_added_unsupported": 0.06121224372546308,
+      "model": "ActionTokenGRU",
+      "refinement_improves_nc": true,
+      "transition": "S0->S1"
+    },
+    {
+      "ambiguity_removed": 0.0003159877009500933,
+      "count_delta_nc_mass": 2620,
+      "count_delta_set_valued": -297,
+      "count_delta_unsupported": 2917,
+      "delta_a": -0.0003159877009500933,
+      "delta_nc": 0.0027875009309401982,
+      "delta_nc_equals_du_plus_da": true,
+      "delta_u_added_unsupported": 0.0031034886318902777,
+      "model": "ActionTokenGRU",
+      "refinement_improves_nc": false,
+      "transition": "S1->S2"
+    },
+    {
+      "ambiguity_removed": 0.01714845038354736,
+      "count_delta_nc_mass": 3801,
+      "count_delta_set_valued": -16118,
+      "count_delta_unsupported": 19919,
+      "delta_a": -0.01714845038354736,
+      "delta_nc": 0.004044004213169347,
+      "delta_nc_equals_du_plus_da": true,
+      "delta_u_added_unsupported": 0.021192454596716717,
+      "model": "ActionTokenGRU",
+      "refinement_improves_nc": false,
+      "transition": "S2->S3"
+    }
+  ]
+}

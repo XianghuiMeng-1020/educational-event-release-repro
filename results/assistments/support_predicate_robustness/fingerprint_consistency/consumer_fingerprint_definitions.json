@@ -1,0 +1,39 @@
+{
+  "pfa_fingerprint": {
+    "function": "chronorep.pfa_fp",
+    "fields": [
+      "correct",
+      "hint_count",
+      "attempt_count",
+      "action_types"
+    ],
+    "truncation": "none",
+    "skill_id_included": false,
+    "score_input": "fp_delta added to the target skill's chronological PFA state. The delta uses correct, hint count, attempt count, answer-token count, hints before the first answer, and whether the first action is a hint.",
+    "current_correctness_in_score": true,
+    "current_outcome_token_in_gru": false
+  },
+  "gru_fingerprint_used_by_chronorep_and_suppred": {
+    "function": "chronorep.gru_fp",
+    "fields": [
+      "action_types[:32]"
+    ],
+    "truncation": 32,
+    "skill_id_included_in_fingerprint": false,
+    "skill_id_in_scored_sequence": "the target event skill_id is written onto every current action token by sequence_for and NeuralPilot._tokens",
+    "current_outcome_token_included": false,
+    "history_truncation_tokens": 64,
+    "prefix_events": 40
+  },
+  "gru_fingerprint_in_r7_core_neural_branch": {
+    "location": "r7_core.py synthetic certificate branch",
+    "fields": [
+      "skill_id",
+      "action_types[:32]"
+    ],
+    "used_by_support_predicate_analysis": false
+  },
+  "skill_fixed_inside_every_development_release_key": true,
+  "numerical_equivalence_of_omitting_skill": true,
+  "equivalence_reason": "Every development release key contains one skill_id, and every valid confirmatory event that hits such a key carries that same skill_id. Adding skill_id to the GRU fingerprint therefore does not split any class. The chronological scorer binds that same skill."
+}

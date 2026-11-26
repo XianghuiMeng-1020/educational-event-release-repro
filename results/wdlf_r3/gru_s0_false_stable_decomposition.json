@@ -1,0 +1,806 @@
+{
+  "cause_counts": {
+    "actual_completion_absent_from_empirical_class": 1539
+  },
+  "checkpoint": "prospective\\wdlf_r7\\sealed\\checkpoints\\action_token_gru_seed17.pt",
+  "created_utc": "2026-08-08T11:53:31.557141+00:00",
+  "cross_checks": {
+    "actual_absent_but_action_contained": 52922,
+    "actual_inclusion_rate_supported": 0.9407712000626426,
+    "containment_rate_supported": 0.9983262679145886,
+    "noncontainment_among_supported": 1539,
+    "noncontainment_equals_false_stable": true,
+    "noncontainment_on_setvalued": 0
+  },
+  "device": "cuda",
+  "example_cases": [
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 4,
+      "n_cdev_fps": 3,
+      "n_uniq_syns": 3,
+      "n_z_dev_events_proxy": 3,
+      "p_true": 0.8975900411605835,
+      "schema": "S0",
+      "skill_id": "39",
+      "t": 85,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 749928
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 5,
+      "n_uniq_syns": 5,
+      "n_z_dev_events_proxy": 7,
+      "p_true": 0.878176212310791,
+      "schema": "S0",
+      "skill_id": "92",
+      "t": 127,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 749928
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 9,
+      "n_uniq_syns": 9,
+      "n_z_dev_events_proxy": 10,
+      "p_true": 0.9922844767570496,
+      "schema": "S0",
+      "skill_id": "25",
+      "t": 200,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 749928
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 11,
+      "n_uniq_syns": 11,
+      "n_z_dev_events_proxy": 30,
+      "p_true": 0.9152737855911255,
+      "schema": "S0",
+      "skill_id": "336",
+      "t": 269,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 749928
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 4,
+      "n_cdev_fps": 4,
+      "n_uniq_syns": 4,
+      "n_z_dev_events_proxy": 4,
+      "p_true": 0.9388512969017029,
+      "schema": "S0",
+      "skill_id": "282",
+      "t": 364,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 749928
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 6,
+      "n_uniq_syns": 6,
+      "n_z_dev_events_proxy": 14,
+      "p_true": 0.9230958819389343,
+      "schema": "S0",
+      "skill_id": "336",
+      "t": 138,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 9116284
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 10,
+      "n_uniq_syns": 10,
+      "n_z_dev_events_proxy": 22,
+      "p_true": 0.9766532778739929,
+      "schema": "S0",
+      "skill_id": "336",
+      "t": 187,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 9116284
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 2,
+      "n_uniq_syns": 2,
+      "n_z_dev_events_proxy": 3,
+      "p_true": 0.98386150598526,
+      "schema": "S0",
+      "skill_id": "324",
+      "t": 204,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 9116284
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 4,
+      "n_uniq_syns": 4,
+      "n_z_dev_events_proxy": 15,
+      "p_true": 0.9531551599502563,
+      "schema": "S0",
+      "skill_id": "326",
+      "t": 45,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 39771
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "progress"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 5,
+      "n_cdev_fps": 2,
+      "n_uniq_syns": 2,
+      "n_z_dev_events_proxy": 80,
+      "p_true": 0.18891355395317078,
+      "schema": "S0",
+      "skill_id": "340",
+      "t": 127,
+      "tau": 0.8,
+      "true_action": "review",
+      "user_id_hash": 39771
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 4,
+      "n_uniq_syns": 4,
+      "n_z_dev_events_proxy": 8,
+      "p_true": 0.9758776426315308,
+      "schema": "S0",
+      "skill_id": "326",
+      "t": 155,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 39771
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 3,
+      "n_uniq_syns": 3,
+      "n_z_dev_events_proxy": 4,
+      "p_true": 0.9917349815368652,
+      "schema": "S0",
+      "skill_id": "279",
+      "t": 202,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 39771
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 2,
+      "n_uniq_syns": 2,
+      "n_z_dev_events_proxy": 2,
+      "p_true": 0.9338870644569397,
+      "schema": "S0",
+      "skill_id": "15",
+      "t": 278,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 39771
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 12,
+      "n_uniq_syns": 12,
+      "n_z_dev_events_proxy": 18,
+      "p_true": 0.9141210317611694,
+      "schema": "S0",
+      "skill_id": "371",
+      "t": 285,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 39771
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 13,
+      "n_uniq_syns": 13,
+      "n_z_dev_events_proxy": 27,
+      "p_true": 0.8902316093444824,
+      "schema": "S0",
+      "skill_id": "371",
+      "t": 485,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 39771
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 3,
+      "n_uniq_syns": 3,
+      "n_z_dev_events_proxy": 5,
+      "p_true": 0.9847672581672668,
+      "schema": "S0",
+      "skill_id": "70",
+      "t": 34,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 7374612
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 12,
+      "n_uniq_syns": 12,
+      "n_z_dev_events_proxy": 20,
+      "p_true": 0.8853955268859863,
+      "schema": "S0",
+      "skill_id": "277",
+      "t": 35,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 7374612
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 2,
+      "n_uniq_syns": 2,
+      "n_z_dev_events_proxy": 2,
+      "p_true": 0.9328442215919495,
+      "schema": "S0",
+      "skill_id": "13",
+      "t": 96,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 3309868
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 3,
+      "n_uniq_syns": 3,
+      "n_z_dev_events_proxy": 3,
+      "p_true": 0.9926580786705017,
+      "schema": "S0",
+      "skill_id": "15",
+      "t": 284,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 3309868
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 3,
+      "n_uniq_syns": 3,
+      "n_z_dev_events_proxy": 4,
+      "p_true": 0.9906069040298462,
+      "schema": "S0",
+      "skill_id": "13",
+      "t": 309,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 3309868
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 3,
+      "n_uniq_syns": 3,
+      "n_z_dev_events_proxy": 4,
+      "p_true": 0.9929994344711304,
+      "schema": "S0",
+      "skill_id": "15",
+      "t": 352,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 3309868
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 2,
+      "n_uniq_syns": 2,
+      "n_z_dev_events_proxy": 5,
+      "p_true": 0.9910694360733032,
+      "schema": "S0",
+      "skill_id": "296",
+      "t": 489,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 3309868
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 4,
+      "n_uniq_syns": 4,
+      "n_z_dev_events_proxy": 5,
+      "p_true": 0.9906760454177856,
+      "schema": "S0",
+      "skill_id": "279",
+      "t": 3,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 966920
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 4,
+      "n_cdev_fps": 14,
+      "n_uniq_syns": 14,
+      "n_z_dev_events_proxy": 29,
+      "p_true": 0.8176458477973938,
+      "schema": "S0",
+      "skill_id": "65",
+      "t": 232,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 966920
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 4,
+      "n_uniq_syns": 4,
+      "n_z_dev_events_proxy": 17,
+      "p_true": 0.9106167554855347,
+      "schema": "S0",
+      "skill_id": "279",
+      "t": 536,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 966920
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 15,
+      "n_uniq_syns": 15,
+      "n_z_dev_events_proxy": 30,
+      "p_true": 0.865256667137146,
+      "schema": "S0",
+      "skill_id": "312",
+      "t": 44,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 2393541
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 3,
+      "n_uniq_syns": 3,
+      "n_z_dev_events_proxy": 3,
+      "p_true": 0.9858308434486389,
+      "schema": "S0",
+      "skill_id": "46",
+      "t": 492,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 7473703
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 9,
+      "n_uniq_syns": 9,
+      "n_z_dev_events_proxy": 20,
+      "p_true": 0.8964636325836182,
+      "schema": "S0",
+      "skill_id": "312",
+      "t": 252,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 7270907
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 2,
+      "n_uniq_syns": 2,
+      "n_z_dev_events_proxy": 3,
+      "p_true": 0.9033802151679993,
+      "schema": "S0",
+      "skill_id": "12",
+      "t": 385,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 7270907
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 6,
+      "n_uniq_syns": 6,
+      "n_z_dev_events_proxy": 8,
+      "p_true": 0.9893686175346375,
+      "schema": "S0",
+      "skill_id": "12",
+      "t": 20,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 967528
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 3,
+      "n_uniq_syns": 3,
+      "n_z_dev_events_proxy": 5,
+      "p_true": 0.9911367893218994,
+      "schema": "S0",
+      "skill_id": "304",
+      "t": 170,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 967528
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 2,
+      "n_uniq_syns": 2,
+      "n_z_dev_events_proxy": 3,
+      "p_true": 0.9930782914161682,
+      "schema": "S0",
+      "skill_id": "297",
+      "t": 192,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 967528
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 6,
+      "n_uniq_syns": 6,
+      "n_z_dev_events_proxy": 8,
+      "p_true": 0.9846791625022888,
+      "schema": "S0",
+      "skill_id": "301",
+      "t": 427,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 967528
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 3,
+      "n_uniq_syns": 3,
+      "n_z_dev_events_proxy": 4,
+      "p_true": 0.9888519644737244,
+      "schema": "S0",
+      "skill_id": "86",
+      "t": 454,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 967528
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 7,
+      "n_uniq_syns": 7,
+      "n_z_dev_events_proxy": 14,
+      "p_true": 0.99041348695755,
+      "schema": "S0",
+      "skill_id": "301",
+      "t": 653,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 967528
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 5,
+      "n_uniq_syns": 5,
+      "n_z_dev_events_proxy": 6,
+      "p_true": 0.963650643825531,
+      "schema": "S0",
+      "skill_id": "301",
+      "t": 97,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 7040897
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 8,
+      "n_uniq_syns": 8,
+      "n_z_dev_events_proxy": 14,
+      "p_true": 0.9899162650108337,
+      "schema": "S0",
+      "skill_id": "277",
+      "t": 161,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 7040897
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 7,
+      "n_uniq_syns": 7,
+      "n_z_dev_events_proxy": 9,
+      "p_true": 0.9745162725448608,
+      "schema": "S0",
+      "skill_id": "61",
+      "t": 266,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 7040897
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 6,
+      "n_uniq_syns": 6,
+      "n_z_dev_events_proxy": 11,
+      "p_true": 0.9628150463104248,
+      "schema": "S0",
+      "skill_id": "299",
+      "t": 480,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 7040897
+    },
+    {
+      "actual_in_cdev_fp": false,
+      "cause": "actual_completion_absent_from_empirical_class",
+      "decisions": [
+        "review"
+      ],
+      "exact_sig_in": false,
+      "n_action_types": 3,
+      "n_cdev_fps": 10,
+      "n_uniq_syns": 10,
+      "n_z_dev_events_proxy": 12,
+      "p_true": 0.9633209109306335,
+      "schema": "S0",
+      "skill_id": "299",
+      "t": 626,
+      "tau": 0.8,
+      "true_action": "progress",
+      "user_id_hash": 7040897
+    }
+  ],
+  "expected_false_stable": 1539,
+  "false_stable": 1539,
+  "false_stable_matches_frozen": true,
+  "false_stable_rarity_bins": {
+    "n_z_2_4": 488,
+    "n_z_5_19": 764,
+    "n_z_ge20": 287
+  },
+  "identity_test": {
+    "identity_holds": true,
+    "n_false_stable_with_actual_absent": 1539,
+    "n_false_stable_with_actual_present": 0,
+    "statement": "FalseStable => actual decision-fingerprint not in C_dev"
+  },
+  "interpretation": "Under deterministic ActionTokenGRU propagation with decision-fingerprint collapse, every reproduced false-Stable event has actual completion absent from C_dev. Non-containment count equals false-Stable count: all action mismatches occur on Stable (not Set-valued) certificates.",
+  "model": "ActionTokenGRU",
+  "n_events": 939910,
+  "rates": {
+    "false_stable_among_all_events": 0.0016373908140141077,
+    "false_stable_among_stable": 0.0019224763594118896,
+    "false_stable_among_supported": 0.001673732085411451
+  },
+  "schema": "S0",
+  "set_valued": 118972,
+  "stable": 800530,
+  "supported": 919502,
+  "tau": 0.8,
+  "unsupported": 20408
+}

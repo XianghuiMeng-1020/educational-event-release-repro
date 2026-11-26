@@ -1,0 +1,113 @@
+{
+  "checks": {
+    "split_development": {
+      "users": 2865,
+      "events": 799590
+    },
+    "split_calibration": {
+      "users": 1032,
+      "events": 288711
+    },
+    "split_confirmatory": {
+      "users": 1021,
+      "events": 294426
+    },
+    "user_split_overlap": 0,
+    "orig_dict_keys": 932,
+    "orig_dict_mismatches": 0,
+    "orig_dict_missing_from_builder": 0,
+    "dkt_batch_matches_loop_dummy": true,
+    "dkt_batch_matches_loop_first_event": true,
+    "supported": true,
+    "unsupported": true,
+    "pfa_stable": true,
+    "pfa_set": true,
+    "dkt_stable": true,
+    "dkt_set": true,
+    "actual_in": true,
+    "pfa_fs": true,
+    "dkt_fs": true,
+    "pfa_eligible": true,
+    "dkt_eligible": true,
+    "pfa_B": true,
+    "pfa_gin": true,
+    "pfa_gout": true,
+    "pfa_amb": true,
+    "dkt_gin": true,
+    "dkt_gout": true,
+    "dkt_amb": true
+  },
+  "pass": true,
+  "reproduced": {
+    "PFA-Option": {
+      "n_events": 294426,
+      "supported": 138039,
+      "unsupported": 156387,
+      "stable": 138028,
+      "set_valued": 11,
+      "event_nc": 156398,
+      "realized_in": 138036,
+      "contained": 138039,
+      "false_stable": 0,
+      "users_with_support": 1018
+    },
+    "CategoricalDKT": {
+      "n_events": 294426,
+      "supported": 138039,
+      "unsupported": 156387,
+      "stable": 132736,
+      "set_valued": 5303,
+      "event_nc": 161690,
+      "realized_in": 138036,
+      "contained": 138039,
+      "false_stable": 0,
+      "users_with_support": 1018
+    }
+  },
+  "capacity": {
+    "PFA-Option": {
+      "n_frame": 1021,
+      "n_eligible": 1018,
+      "n_no_checkpoint": 3,
+      "B": 51,
+      "guaranteed_in": 49,
+      "guaranteed_out": 966,
+      "unresolved": 3,
+      "all_user_nc_num": 6,
+      "all_user_nc": 0.005876591576885406,
+      "false_gin": 0,
+      "false_gout": 0,
+      "tie_rule": "ascending_user_id_string",
+      "membership_method": "interval_robust_rank_conservative"
+    },
+    "CategoricalDKT": {
+      "n_frame": 1021,
+      "n_eligible": 1018,
+      "n_no_checkpoint": 3,
+      "B": 51,
+      "guaranteed_in": 1,
+      "guaranteed_out": 729,
+      "unresolved": 288,
+      "all_user_nc_num": 291,
+      "all_user_nc": 0.2850146914789422,
+      "false_gin": 0,
+      "false_gout": 0,
+      "tie_rule": "ascending_user_id_string",
+      "membership_method": "interval_robust_rank_conservative"
+    }
+  },
+  "expected_splits": {
+    "development": [
+      2865,
+      799590
+    ],
+    "calibration": [
+      1032,
+      288711
+    ],
+    "confirmatory": [
+      1021,
+      294426
+    ]
+  }
+}

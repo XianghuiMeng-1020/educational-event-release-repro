@@ -1,0 +1,15 @@
+{
+  "feature": "(position, skill_id, token_id)",
+  "positions": "left-aligned index in the retained chronological sequence",
+  "n_features": 186560,
+  "intercept": true,
+  "excluded": [
+    "current correctness",
+    "raw hint and attempt columns",
+    "student id",
+    "future events",
+    "source row",
+    "clock time"
+  ],
+  "manual_versus_library_max_abs": 4.440892098500626e-16
+}

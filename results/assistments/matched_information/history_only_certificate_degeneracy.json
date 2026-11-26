@@ -1,0 +1,24 @@
+{
+  "claim": "HIST current input is one constant start marker on the target skill. It does not depend on candidate action identities or length.",
+  "structural_implication": "For a fixed history and skill, every candidate completion receives the same HIST score. The score interval is a singleton, so a supported HIST certificate cannot be Set-valued. That stability is mechanical and is not evidence of stronger decision identifiability.",
+  "classes_with_two_distinct_action_fingerprints": {
+    "S0": 24,
+    "S1": 16,
+    "S2": 16,
+    "S3": 0
+  },
+  "hist_token_sequences_identical": {
+    "S0": 24,
+    "S1": 16,
+    "S2": 16,
+    "S3": 0
+  },
+  "act_token_sequences_differ": {
+    "S0": 24,
+    "S1": 16,
+    "S2": 16,
+    "S3": 0
+  },
+  "marker": "start",
+  "marker_id": 1
+}

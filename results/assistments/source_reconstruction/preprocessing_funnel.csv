@@ -1,0 +1,27 @@
+stage,exclusive_reason,input_rows,rows_retained,rows_excluded,cumulative_retained_rows,user_count,note
+input,,6123270,6123270,0,6123270,46674,CSV data rows in file order
+exclusive_filter,missing_user_id,6123270,6123270,0,6123270,0,users with at least one row assigned this exclusive reason; a user may also have retained rows
+exclusive_filter,missing_problem_id,6123270,6123270,0,6123270,0,users with at least one row assigned this exclusive reason; a user may also have retained rows
+exclusive_filter,correctness_missing,6123270,6123270,0,6123270,0,users with at least one row assigned this exclusive reason; a user may also have retained rows
+exclusive_filter,correctness_unparseable,6123270,6123270,0,6123270,0,users with at least one row assigned this exclusive reason; a user may also have retained rows
+exclusive_filter,correctness_partial,6123270,6117947,5323,6117947,2092,users with at least one row assigned this exclusive reason; a user may also have retained rows
+exclusive_filter,action_parse_failed,6123270,6117288,659,6117288,207,users with at least one row assigned this exclusive reason; a user may also have retained rows
+exclusive_filter,action_parse_partial,6123270,6117045,243,6117045,240,users with at least one row assigned this exclusive reason; a user may also have retained rows
+exclusive_filter,empty_action_sequence,6123270,6117045,0,6117045,0,users with at least one row assigned this exclusive reason; a user may also have retained rows
+exclusive_filter,hint_or_attempt_unparseable,6123270,6117045,0,6117045,0,users with at least one row assigned this exclusive reason; a user may also have retained rows
+minimum_user_events,fewer_than_3_retained_events,6123270,6115049,1996,6115049,1344,entire user removed when retained events < 3; applied after row filters and preserves order
+independent_flag,attempt_count_integer,6123270,,6123270,,,not an exclusive reason; flags can overlap
+independent_flag,correctness_binary_correct,6123270,,4141564,,,not an exclusive reason; flags can overlap
+independent_flag,correctness_binary_incorrect,6123270,,1976383,,,not an exclusive reason; flags can overlap
+independent_flag,correctness_partial,6123270,,5323,,,not an exclusive reason; flags can overlap
+independent_flag,hint_count_integer,6123270,,6123270,,,not an exclusive reason; flags can overlap
+independent_flag,parser_duplicated_actions_flag,6123270,,772,,,not an exclusive reason; flags can overlap
+independent_flag,parser_failed,6123270,,659,,,not an exclusive reason; flags can overlap
+independent_flag,parser_non_monotonic_flag,6123270,,6117045,,,not an exclusive reason; flags can overlap
+independent_flag,parser_partial,6123270,,243,,,not an exclusive reason; flags can overlap
+independent_flag,parser_success,6123270,,6117045,,,not an exclusive reason; flags can overlap
+independent_flag,skill_id_missing,6123270,,3411457,,,not an exclusive reason; flags can overlap
+independent_flag,skill_name_missing,6123270,,3493190,,,not an exclusive reason; flags can overlap
+parser_reason_code,keyword_fallback_no_timestamps,6123270,,41,,,reason_code from parse_actions_field on rows that reached the parser
+parser_reason_code,partial_token_parse,6123270,,202,,,reason_code from parse_actions_field on rows that reached the parser
+parser_reason_code,unrecognized_format,6123270,,659,,,reason_code from parse_actions_field on rows that reached the parser

@@ -1,0 +1,50 @@
+{
+  "frozen_before_confirmatory_scores": true,
+  "architecture": {
+    "name": "CausalTokenAttentionKT",
+    "consumer_name": "Causal Token-Attention Consumer",
+    "token_embedding_dim": 64,
+    "layers": 2,
+    "heads": 4,
+    "feedforward_dim": 128,
+    "activation": "GELU",
+    "dropout": 0.1,
+    "norm": "LayerNorm",
+    "norm_eps": 1e-05,
+    "max_positions": 64,
+    "positional_convention": "left_aligned_index_in_retained_64_token_window",
+    "readout": "last_real_token",
+    "combination": "sum of skill embedding and action-or-outcome embedding",
+    "padding_mask": "positional, not token-id based; unseen skills may use id 0 and remain real tokens",
+    "causal_mask": "standard upper-triangular block; not AKT monotonic attention",
+    "batch_size": 64,
+    "epochs": 2,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "loss": "binary_cross_entropy",
+    "seed": 17
+  },
+  "n_skills": 264,
+  "n_action_types": 8,
+  "atype_vocabulary": {
+    "<pad>": 0,
+    "start": 1,
+    "answer": 2,
+    "end": 3,
+    "hint": 4,
+    "resume": 5,
+    "scaffold": 6,
+    "url": 7,
+    "survey_response": 8
+  },
+  "outcome_token_ids": [
+    9,
+    10
+  ],
+  "parameter_count": 88897,
+  "parameter_match_to_gru": false,
+  "optimizer_match_to_gru": false,
+  "reason": "Different parameter count and minibatch updates. The shared contract is the chronological input and the current-event correctness task.",
+  "mask_tests_pass": true,
+  "script_sha256": "ccf7fd48e014452450902d97dfcabaae12c1576c3fed92c6165a1fb1d97595f2"
+}

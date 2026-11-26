@@ -1,0 +1,17 @@
+# Reliability Qualifier Freeze Rule
+
+Frozen before confirmatory qualifier evaluation.
+
+## Rule
+
+`QUALIFIED_STABLE` ⇔ `Stable` AND `n_users(key) >= 5`
+
+- **n_min:** `5`
+- Feature: development-dictionary `n_users` for the S0 release key
+- Applied once on confirmatory sealed evaluation; no post-hoc retuning
+
+## Protocol constants
+
+- τ = 0.80
+- Schema: S0
+- Models: TransparentActionPFA, ActionTokenGRU

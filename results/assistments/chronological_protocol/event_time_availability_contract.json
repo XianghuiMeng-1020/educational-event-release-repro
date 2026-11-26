@@ -1,0 +1,26 @@
+{
+  "primary_clock": "naive CSV civil start_time and end_time, compared as datetime64 microseconds from one mixed-format parse",
+  "timezone_mixture": false,
+  "valid_interval": "parseable start, parseable end, and end >= start",
+  "invalid_interval_policy": "excluded from pilot targets and from chronological history updates; retained in the reconstructed files; retained in the development release-key multiset",
+  "history": "H(e) = {p same student, valid interval, end(p) < start(e)}",
+  "history_order": [
+    "ascending end",
+    "ascending source_row"
+  ],
+  "target_order": [
+    "ascending start",
+    "ascending source_row"
+  ],
+  "target_not_in_own_history": true,
+  "pfa_timing": "pre-state is H(e); the candidate completion is ingested only inside a restore-protected score; the realized event joins later histories only after its own end",
+  "gru_timing": "prefix outcomes come from H(e); current action tokens are included; current outcome token is withheld; this is an action-conditioned current-event score",
+  "not_the_same_estimand": true,
+  "within_user_validity_is_not_global_prospective_deployment": true,
+  "inversion_note": {
+    "count_name_in_tempfor": "inversions_overlapping_previous_interval",
+    "reported_value": 2540774,
+    "code": "previous.start > next.start AND next.start < previous.end",
+    "reading": "This is a start inversion for which the next start is numerically less than the previous end. For a valid previous interval, a start inversion places the next start strictly before the previous interval, so the next start is not inside [previous.start, previous.end]. The 8355 adjacent pairs with previous.start < next.start < previous.end are the adjacent forward containments."
+  }
+}

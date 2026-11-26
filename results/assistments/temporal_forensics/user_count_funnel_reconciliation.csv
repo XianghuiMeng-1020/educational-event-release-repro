@@ -1,0 +1,11 @@
+stage,rows,distinct_users,users_eliminated_entirely,users_remaining,note
+raw_csv,6123270,46674,0,46674,distinct non-empty user ids
+accepted_by_row_predicate,6117045,46667,7,46667,users with at least one row accepted before the three-event rule
+minimum_three_events,6115049,45323,1344,45323,users with one or two accepted rows are removed with all of their rows
+nonretained_row_reason:accepted_then_removed_by_minimum_event_rule,1996,,,,exclusive row reason among rows absent from the final parquet
+nonretained_row_reason:action_parse_failed,659,,,,exclusive row reason among rows absent from the final parquet
+nonretained_row_reason:action_parse_partial,243,,,,exclusive row reason among rows absent from the final parquet
+nonretained_row_reason:correctness_partial,5323,,,,exclusive row reason among rows absent from the final parquet
+users_with_zero_accepted_rows:correctness_partial,,7,7,,"a user is counted once, under the combination of row reasons that removed every one of that user's rows"
+users_removed_for_event_count_1,692,692,692,,accepted rows before the minimum-event rule
+users_removed_for_event_count_2,1304,652,652,,accepted rows before the minimum-event rule

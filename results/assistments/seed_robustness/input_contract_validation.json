@@ -1,0 +1,107 @@
+{
+  "design": "FIXED_COHORT_INITIALIZATION_AND_OPTIMIZATION_SEED_ROBUSTNESS",
+  "cases": 250,
+  "target_cases": 250,
+  "stratum_counts": {
+    "length_1": {
+      "available": 0,
+      "selected": 0
+    },
+    "length_2": {
+      "available": 0,
+      "selected": 0
+    },
+    "length_3": {
+      "available": 127182,
+      "selected": 20
+    },
+    "length_4": {
+      "available": 16208,
+      "selected": 20
+    },
+    "length_8": {
+      "available": 3283,
+      "selected": 20
+    },
+    "length_16": {
+      "available": 63,
+      "selected": 20
+    },
+    "length_32": {
+      "available": 7,
+      "selected": 7
+    },
+    "short_history": {
+      "available": 9996,
+      "selected": 20
+    },
+    "long_history": {
+      "available": 127509,
+      "selected": 20
+    },
+    "recent_predecessor": {
+      "available": 169202,
+      "selected": 20
+    },
+    "start_order_would_include_unfinished": {
+      "available": 24180,
+      "selected": 20
+    },
+    "chronorep_budget_differs_from_32": {
+      "available": 146028,
+      "selected": 30
+    }
+  },
+  "length_available_in_training_targets": {
+    "3": 127182,
+    "4": 16208,
+    "5": 8919,
+    "6": 7270,
+    "7": 5267,
+    "8": 3283,
+    "9": 2035,
+    "10": 1108,
+    "11": 681,
+    "12": 377,
+    "13": 204,
+    "14": 148,
+    "15": 80,
+    "16": 63,
+    "17": 59,
+    "18": 56,
+    "19": 39,
+    "20": 25,
+    "21": 16,
+    "22": 16,
+    "23": 11,
+    "24": 20,
+    "25": 13,
+    "26": 4,
+    "27": 9,
+    "28": 5,
+    "29": 5,
+    "30": 6,
+    "31": 8,
+    "32": 7
+  },
+  "arms_checked": {
+    "HIST": 250,
+    "LEN": 250,
+    "ACT_MATCHED": 250,
+    "ACT_PRIMARY": 250
+  },
+  "violations": {},
+  "violation_examples": {},
+  "vocabulary_action_ids": {
+    "<pad>": 0,
+    "start": 1,
+    "answer": 2,
+    "end": 3,
+    "hint": 4,
+    "resume": 5,
+    "scaffold": 6,
+    "url": 7,
+    "survey_response": 8
+  },
+  "epochs_represented": "unique valid targets from both fixed epochs"
+}

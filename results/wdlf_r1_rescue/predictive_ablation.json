@@ -1,0 +1,140 @@
+{
+  "protocol_id": "wdlf_r1_rescue_predictive_ablation_v1",
+  "protocol_path": "results\\wdlf_r1_rescue\\predictive_ablation_protocol.json",
+  "generated_utc": "2026-08-08T04:17:35.913744+00:00",
+  "total_runtime_s": 8.062196016311646,
+  "assistments": {
+    "model": "TransparentActionPFA",
+    "predictive": {
+      "S0": {
+        "n": 933144,
+        "positive_rate": 0.6792049244275268,
+        "roc_auc": 0.660319421983102,
+        "log_loss": 0.5967993132101893,
+        "brier": 0.20494517794356987,
+        "ece_10bin": 0.046347495747048585
+      },
+      "S1": {
+        "n": 933144,
+        "positive_rate": 0.6792049244275268,
+        "roc_auc": 0.6632037556994197,
+        "log_loss": 0.6137494927135227,
+        "brier": 0.21005049150168023,
+        "ece_10bin": 0.07271095913560731
+      },
+      "delta_S1_minus_S0": {
+        "roc_auc": 0.0028843337163176885,
+        "log_loss": 0.01695017950333344,
+        "brier": 0.005105313558110364,
+        "ece_10bin": 0.026363463388558724
+      },
+      "runtime_s": 4.258627891540527,
+      "n_users": 6766,
+      "n_pred_events": 933144
+    },
+    "certificates_frozen": {
+      "source_p1": "results\\wdlf_r7\\p1_by_schema_model.csv",
+      "source_p2": "results\\wdlf_r7\\p2_by_schema_model.csv",
+      "by_schema": {
+        "S0": {
+          "support_rate": 0.9782872828249514,
+          "event_noncertification_rate": 0.025102403421604195,
+          "event_certified_stable_coverage": 0.9748975965783958,
+          "p2_all_user_noncertification_rate": 0.053798403783624,
+          "p2_unresolved": 352,
+          "p2_eligible_users": 6754
+        },
+        "S1": {
+          "support_rate": 0.9170750390994883,
+          "event_noncertification_rate": 0.08295581491844964,
+          "event_certified_stable_coverage": 0.9170441850815504,
+          "p2_all_user_noncertification_rate": 0.0033993496896245934,
+          "p2_unresolved": 6,
+          "p2_eligible_users": 6749
+        },
+        "S2": {
+          "support_rate": 0.9139715504675979,
+          "event_noncertification_rate": 0.08603164132736113,
+          "event_certified_stable_coverage": 0.9139683586726388,
+          "p2_all_user_noncertification_rate": 0.0029559562518474726,
+          "p2_unresolved": 0,
+          "p2_eligible_users": 6746
+        },
+        "S3": {
+          "support_rate": 0.8927790958708812,
+          "event_noncertification_rate": 0.10722090412911875,
+          "event_certified_stable_coverage": 0.8927790958708812,
+          "p2_all_user_noncertification_rate": 0.0036949453148093407,
+          "p2_unresolved": 3,
+          "p2_eligible_users": 6744
+        }
+      },
+      "delta_S1_minus_S0": {
+        "event_noncertification_rate": 0.05785341149684545,
+        "p2_all_user_noncertification_rate": -0.050399054093999404,
+        "support_rate": -0.06121224372546308
+      }
+    }
+  },
+  "eedi": {
+    "model": "PFA-Option",
+    "predictive": {
+      "R0_omit_option": {
+        "n": 294426,
+        "positive_rate": 0.5324292012254352,
+        "roc_auc": 0.6844270713714244,
+        "log_loss": 0.6351134589959403,
+        "brier": 0.22290680941022922,
+        "ece_10bin": 0.018012678003669163
+      },
+      "R1_option_aware": {
+        "n": 294426,
+        "positive_rate": 0.5324292012254352,
+        "roc_auc": 0.6848172353993268,
+        "log_loss": 0.6347015950880366,
+        "brier": 0.22274040151468513,
+        "ece_10bin": 0.017295377796814122
+      },
+      "checkpoint": "prospective\\g6p\\checkpoints\\pfa_option_params.json",
+      "runtime_s": 2.977492332458496,
+      "n_users": 1021,
+      "delta_R1_minus_R0": {
+        "roc_auc": 0.00039016402790237326,
+        "log_loss": -0.00041186390790370897,
+        "brier": -0.00016640789554409063,
+        "ece_10bin": -0.0007173002068550406
+      }
+    },
+    "certificates_frozen": {
+      "source_p1": "results\\wdlf_r3\\p1_results.csv",
+      "source_p2": "results\\wdlf_r3\\p2_results.csv",
+      "PFA-Option@0.8": {
+        "supported_rate": 0.4688410670253306,
+        "unsupported_rate": 0.5311589329746693,
+        "set_valued_given_supported": 7.96876245119133e-05,
+        "stable": 138028,
+        "set_valued": 11,
+        "unsupported": 156387,
+        "n_events": 294426,
+        "event_noncertification_proxy": 0.5311962938055742
+      },
+      "PFA-Option@kappa0.05": {
+        "n_eligible": 1018,
+        "ambiguous": 3,
+        "ambiguous_rate": 0.0029469548133595285,
+        "certificate_coverage": 0.9970617042115573,
+        "guaranteed_in": 49,
+        "guaranteed_out": 966,
+        "note": "P2 ambiguous_rate on eligible users; not ASSISTments-style nc_all"
+      },
+      "interpretation": "Eedi frozen certificates measure option-ambiguity under R0 keys; they are not an R0-vs-R1 predictive-input certificate ladder."
+    },
+    "neural_deferred": true
+  },
+  "headline": {
+    "assistments_pred_small": true,
+    "assistments_cert_large": true,
+    "assistments_dissociation": true,
+    "assistments_reading": "Predictive |\u0394AUC|=0.0029, |\u0394NLL|=0.0170; certificate |\u0394EventNC|=0.0579, |\u0394P2NC|=0.0504. YES \u2014 predictive move is small relative to certification move on S0\u2192S1."
+  }
+}

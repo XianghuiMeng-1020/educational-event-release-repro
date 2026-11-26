@@ -1,0 +1,40 @@
+{
+  "r0": {
+    "name": "PFA-Option",
+    "config": {
+      "representation": "EEDI-R0",
+      "use_option_covariates": false,
+      "max_history": 10000
+    },
+    "config_hash": "3f7c612c1a1eaa880358ff963827118d45d9fcc6b0ac80970338f9147a9f0667",
+    "params": {
+      "beta": 0.25017991395636185,
+      "gamma": 0.6578981663045808,
+      "rho": -0.8241895172282033,
+      "eta_opt1": 0.0,
+      "eta_opt2": 0.0,
+      "eta_opt3": 0.0,
+      "eta_opt4": 0.0
+    },
+    "input_encoder_id": "pfa_option_encoder|EEDI-R0|3f7c612c1a1eaa88"
+  },
+  "r1": {
+    "name": "PFA-Option",
+    "config": {
+      "representation": "EEDI-R1",
+      "use_option_covariates": true,
+      "max_history": 10000
+    },
+    "config_hash": "1574fa20c029866040701d5235123ebfce36c97005cbefac6947910502e0f124",
+    "params": {
+      "beta": 0.32096223490067793,
+      "gamma": 0.5673863625049843,
+      "rho": -0.8948409667146382,
+      "eta_opt1": 0.01774252024645417,
+      "eta_opt2": 0.01589066349585588,
+      "eta_opt3": 0.013761974896306916,
+      "eta_opt4": 0.011439221668526954
+    },
+    "input_encoder_id": "pfa_option_encoder|EEDI-R1|1574fa20c0298660"
+  }
+}

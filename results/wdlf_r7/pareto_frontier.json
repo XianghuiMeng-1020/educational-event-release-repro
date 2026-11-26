@@ -1,0 +1,23 @@
+{
+  "TransparentActionPFA": {
+    "nondominated": [
+      "TransparentActionPFA:S0",
+      "TransparentActionPFA:S1",
+      "TransparentActionPFA:S2"
+    ],
+    "dominated": [
+      "TransparentActionPFA:S3"
+    ],
+    "convention": "lower_cost_higher_coverage_lower_noncert"
+  },
+  "ActionTokenGRU": {
+    "nondominated": [
+      "ActionTokenGRU:S0",
+      "ActionTokenGRU:S1",
+      "ActionTokenGRU:S2",
+      "ActionTokenGRU:S3"
+    ],
+    "dominated": [],
+    "convention": "lower_cost_higher_coverage_lower_noncert"
+  }
+}
